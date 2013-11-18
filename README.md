@@ -38,4 +38,4 @@ in *all* modern browsers **autmatically**!
 
 - QUnit **intro tutorial**: http://qunitjs.com/intro/
 - QUnit on **GitHub**: https://github.com/jquery/qunit
-- Blanket.js Test Coverage
+- Blanket.js Test Coverage: http://blanketjs.org/
