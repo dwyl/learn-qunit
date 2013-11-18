@@ -7,9 +7,9 @@ A quick introduction to QUnit JavaScript Unit Testing.
 
 The *official* description on http://qunitjs.com/ is:
 
-> QUnit is a powerful, easy-to-use JavaScript unit testing framework. <br />
-> It's used by the jQuery, jQuery UI and jQuery Mobile projects and 
-> is capable of testing any generic JavaScript code.
+> QUnit is a **powerful**, ***easy-to-use*** JavaScript unit testing framework.
+> It's used by the jQuery, jQuery UI and jQuery Mobile projects <br />
+> and is capable of testing any **generic** JavaScript code.
 
 ## Why Should I Learn (How to Use) QUnit?
 
@@ -23,11 +23,12 @@ My **Top Five** reasons you should learn QUnit are:
 
 If you have ever had to test (and re-test) a web site/app 
 (*[ad nauseam](http://en.wikipedia.org/wiki/Ad_nauseam)*)
-in *several* browsers, this screenshot will look like ***nirvana*** to you:
+in *several* browsers, <br />
+this screenshot will look like ***nirvana*** to you:
 ![Test Swarm Results for QUnit](http://i.imgur.com/A63wZaA.png "Test Swarm Results")
 These are the **Continuous Integration** (CI) Tests for the QUnit *project*.
-Each time a comit is saved the entire suite of (*automated*) tests is run  
-in *all* modern browsers **autmatically**!
+Each time a comit is saved the entire suite of (*automated*) tests is run in 
+*all* modern browsers **autmatically**!
 
 *Yes*, most of these *reasons* (for learning QUnit) are also applicable 
 to Mocha and Jasmine. I'm not advocating one testing framework over the other.
@@ -38,7 +39,7 @@ and I used [Jasmine](http://pivotal.github.io/jasmine) *extensively*
 I actually *suggest* you ***make time*** to learn a few JS testing frameworks
 and then pick the one you like best!
 
-
+## 
 
 
 
