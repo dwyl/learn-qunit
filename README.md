@@ -13,11 +13,13 @@ The *official* description on http://qunitjs.com/ is:
 
 ## Why Should I Learn (How to Use) QUnit?
 
-My **top three** reasons you should learn QUnit are:
+My **Top Five** reasons you should learn QUnit are:
 
-1. QUnit has a ***shallow learning curve***. (*start testing in 5 mins*!)
-2. QUnit is ***well established*** and used extensively by JQuery developers.
-3. QUnit has a ***great ecosystem*** of utilities! (QMock, TestSwarm & Blanket.js)
+1. ***Shallow learning curve***. (*start testing in 5 mins*!)
+2. ***Browser Based*** so there's ***Nothing to Install*** or *Configure*! 
+3. Great ***Documentation*** (see **Useful Links** below)
+4. ***Well established*** and used extensively by JQuery developers.
+5. Great ***Ecosystem***! (QMock, TestSwarm & Blanket.js -> *code coverage*)
 
 If you have ever had to test (and re-test) a web site/app 
 (*[ad nauseam](http://en.wikipedia.org/wiki/Ad_nauseam)*)
@@ -27,10 +29,18 @@ These are the **Continuous Integration** (CI) Tests for the QUnit *project*.
 Each time a comit is saved the entire suite of (*automated*) tests is run  
 in *all* modern browsers **autmatically**!
 
+*Yes*, most of these *reasons* (for learning QUnit) are also applicable 
+to Mocha and Jasmine. I'm not advocating one testing framework over the other.
+I've used Mocha JS quit a bit in the past and wrote a 
+[Learn Mocha tutorial](https://github.com/nelsonic/learn-mocha) 
+and I used [Jasmine](http://pivotal.github.io/jasmine) *extensively* 
+[@MakePositive](https://twitter.com/nelsonic/status/321304049263722496/photo/1)
+I actually *suggest* you ***make time*** to learn a few JS testing frameworks
+and then pick the one you like best!
 
 
-> There is a good introductory tutorial on the QUnit website:
-> 
+
+
 
 
 ## Useful Links
@@ -38,4 +48,6 @@ in *all* modern browsers **autmatically**!
 
 - QUnit **intro tutorial**: http://qunitjs.com/intro/
 - QUnit on **GitHub**: https://github.com/jquery/qunit
-- Blanket.js Test Coverage: http://blanketjs.org/
+- QUnit **API Docs**: http://api.qunitjs.com/category/all/
+- QUnit **Cookbook** (plenty of *examples*!): http://qunitjs.com/cookbook/
+- Blanket.js **Test Coverage**: http://blanketjs.org/
