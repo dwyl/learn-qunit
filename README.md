@@ -20,9 +20,13 @@ My **top three** reasons you should learn QUnit are:
 3. QUnit has a ***great ecosystem*** of utilities! (QMock, TestSwarm & Blanket.js)
 
 If you have ever had to test (and re-test) a web site/app 
+(*[ad nauseam](http://en.wikipedia.org/wiki/Ad_nauseam)*)
 in *several* browsers, this screenshot will look like ***nirvana*** to you:
 ![Test Swarm Results for QUnit](http://i.imgur.com/A63wZaA.png "Test Swarm Results")
 These are the **Continuous Integration** (CI) Tests for the QUnit *project*.
+Each time a comit is saved the entire suite of (*automated*) tests is run  
+in *all* modern browsers **autmatically**!
+
 
 
 > There is a good introductory tutorial on the QUnit website:
