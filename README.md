@@ -49,12 +49,9 @@ git clone https://github.com/nelsonic/learn-qunit.git
 ```
 
 Open the **learn-quint** directory and have a look around.
-
-. . .
-
-Today was not a particularly productive day coding-wise ...
-I spent my "spare" time doing business planning for my mom's school!!
-see: https://docs.google.com/spreadsheet/ccc?key=0At2En7gVvp7sdG40UXBXY2o1SEltUFlMeEtuWS1sZ1E
+The main file you need is the **index.html**
+(this can be called *what-ever-you-like.html* as long as it includes 
+necessary qunit.js files and **test.js** where the tests are)
 
 
 **Note**: To facilitate *offline* learning I've included **qunit.js** 
