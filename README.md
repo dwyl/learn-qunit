@@ -48,6 +48,14 @@ JS testing frameworks and then *pick* the one you like best!
 git clone https://github.com/nelsonic/learn-qunit.git
 ```
 
+Open the **learn-quint** directory and have a look around.
+
+. . .
+
+Today was not a particularly productive day coding-wise ...
+I spent my "spare" time doing business planning for my mom's school!!
+see: https://docs.google.com/spreadsheet/ccc?key=0At2En7gVvp7sdG40UXBXY2o1SEltUFlMeEtuWS1sZ1E
+
 
 **Note**: To facilitate *offline* learning I've included **qunit.js** 
 and **qunit.css** in the **/resources** directory, 
