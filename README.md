@@ -54,11 +54,19 @@ The main file you need is the **index.html**
 necessary qunit.js files and **test.js** where the tests are. 
 both these files are in the ./**resources** directory)
 
+### Example Project: Stopwatch
+
+In a previous tutorial I built a simple stopwatch:
+https://github.com/nelsonic/stopwatch but its *deliberately* "rough" 
+did *not* have tests and all code was contained in a single html file.
+
+
+
 
 **Note**: To facilitate *offline* learning I've included **qunit.js** 
 and **qunit.css** in the **/resources** directory, 
 but on a "real" project you should use the **CDN** versions
-(see http://qunitjs.com/ bottom of the homepage for details.)
+(see http://qunitjs.com/ *bottom* of the *homepage* for latest links.)
 
 
 
