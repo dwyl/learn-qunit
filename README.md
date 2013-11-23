@@ -49,7 +49,7 @@ git clone https://github.com/nelsonic/learn-qunit.git
 ```
 
 Open the **learn-quint** directory and have a look around.
-The main file you need to inspect is **index.html**:
+The main file you need to inspect is ./test/**index.html**:
 
 ```html
 <!DOCTYPE html>
@@ -78,8 +78,13 @@ display the results of our unit tests.
 ### Example Project: Stopwatch
 
 In a previous tutorial I built a simple stopwatch:
-https://github.com/nelsonic/stopwatch but its *deliberately* "rough" 
+https://github.com/nelsonic/stopwatch but its *deliberately* "minimalist" 
 did *not* have tests and all code was contained in a single html file.
+
+This time we are going to do it the "right" way.
+
+
+
 
 
 
