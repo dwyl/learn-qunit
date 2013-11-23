@@ -83,7 +83,12 @@ did *not* have tests and all code was contained in a single html file.
 
 This time we are going to do it the "right" way.
 
+#### What Functionality Does Our Stopwatch Need?
 
+- Counter should be at Zero when we start
+- Start Counting time from a specific point
+- Stop Counting
+- Re-set the counter to Zero.
 
 
 
@@ -108,4 +113,11 @@ but on a "real" project you should use the **CDN** versions
 - JQuery's TestSwarm: http://swarm.jquery.org/
 
 > **PhantomJS** with QUnit: http://www.ianlewis.org/en/phantom-qunit-test-runner
-> **RequireJS** + **Backbone**:http://backbonetutorials.com/organizing-backbone-using-modules/
+
+## Unrelated but worth reading
+@todo: add these to main JS tutorial!
+
+- Anton Kovalyov explains why he forked JSLint (to create JSHint): 
+http://anton.kovalyov.net/p/why-jshint/
+- Stack discussion of JSHint vs JSLint: 
+http://stackoverflow.com/questions/6803305/should-i-use-jslint-or-jshint-javascript-validation
