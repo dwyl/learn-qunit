@@ -49,10 +49,31 @@ git clone https://github.com/nelsonic/learn-qunit.git
 ```
 
 Open the **learn-quint** directory and have a look around.
-The main file you need is the **index.html**
-(this can be called *what-ever-you-like.html* as long as it includes 
-necessary qunit.js files and **test.js** where the tests are. 
+The main file you need to inspect is **index.html**:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Learn QUnit</title>
+  <link rel="stylesheet" href="resources/qunit.css">
+</head>
+<body>
+  <div id="qunit"></div>
+  <div id="qunit-fixture"></div>
+  <script src="resources/qunit.js"></script>
+  <script src="resources/tests.js"></script>
+</body>
+</html>
+```
+
+(it references the necessary qunit.js files and **test.js** 
 both these files are in the ./**resources** directory)
+
+In the *body* of the **index.html** file there are two div elements 
+with ids of **quint** and **qunit-fixture** these are where QUnit will
+display the results of our unit tests.
 
 ### Example Project: Stopwatch
 
@@ -82,3 +103,4 @@ but on a "real" project you should use the **CDN** versions
 - JQuery's TestSwarm: http://swarm.jquery.org/
 
 > **PhantomJS** with QUnit: http://www.ianlewis.org/en/phantom-qunit-test-runner
+> **RequireJS** + **Backbone**:http://backbonetutorials.com/organizing-backbone-using-modules/
