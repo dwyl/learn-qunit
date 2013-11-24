@@ -79,9 +79,8 @@ display the results of our unit tests.
 
 In a previous tutorial I built a simple stopwatch:
 https://github.com/nelsonic/stopwatch but its *deliberately* "minimalist" 
-did *not* have tests and all code was contained in a single html file.
-
-This time we are going to do it the "right" way.
+(did *not* have tests and all code was contained in a single html file)
+*This* time we are going to do it the "*right*" way, then you can compare.
 
 #### What Functionality Does Our Stopwatch Need?
 
@@ -90,8 +89,9 @@ This time we are going to do it the "right" way.
 - Stop Counting
 - Re-set the counter to Zero.
 
+#### Folder/File Structure
 
-
+- ./**lib** contains the **stopwatch.js** module file
 
 
 **Note**: To facilitate *offline* learning I've included **qunit.js** 
@@ -121,3 +121,4 @@ but on a "real" project you should use the **CDN** versions
 http://anton.kovalyov.net/p/why-jshint/
 - Stack discussion of JSHint vs JSLint: 
 http://stackoverflow.com/questions/6803305/should-i-use-jslint-or-jshint-javascript-validation
+> @todo: add to Maintainable JS: http://net.tutsplus.com/tutorials/javascript-ajax/principles-of-maintainable-javascript/
