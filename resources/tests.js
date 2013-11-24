@@ -1,8 +1,8 @@
-test( "Stopwatch startTime is Zero when first initialze the app", function() {
-  equal( S.startTime === 0, true );
+test( "Timer startTime is Zero when first initialze the app", function() {
+	equal( T.timerStarted, 0, true );
 });
 
-// test( "deepEqual test", function() {
-//   var obj = { foo: "bar" };
-//   deepEqual( obj, { foo: "bar" }, "Two objects can be the same in value" );
-// });
+test( "Timer starts counting from *NOW* (when instructed)", function() {
+	var startTime = new Date().getTime();
+	equal( T.startTimer(startTime), startTime, true );
+});
