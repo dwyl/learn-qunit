@@ -87,6 +87,7 @@ https://github.com/nelsonic/stopwatch but its *deliberately* "minimalist"
 - Counter should be at Zero when we start
 - Start Counting time from a specific point
 - Stop Counting
+- Continue Counting (without resetting) pick up where we left off.
 - Re-set the counter to Zero.
 
 #### Folder/File Structure
