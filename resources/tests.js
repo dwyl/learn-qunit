@@ -6,3 +6,9 @@ test( "Timer starts counting from *NOW* (when instructed)", function() {
 	var startTime = new Date().getTime();
 	equal( T.startTimer(startTime), startTime, true );
 });
+
+test( "Timer starts counting from *NOW* (when instructed)", function() {
+	var startTime = new Date().getTime();
+	equal( T.startTimer(startTime), startTime, true );
+	equal( T.startTimer(startTime), startTime, true );
+});
