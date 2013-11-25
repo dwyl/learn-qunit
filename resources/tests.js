@@ -12,9 +12,7 @@ test( "Timer stops counting when stopTimer fires", function() {
 		endTime     = 0,
 		timeElapsed = 0;
 	equal( T.startTimer(startTime), startTime, true );
-	setTimeout(function() {
-		endTime = new Date().getTime();
-		timeElapsed = endTime - startTime;
-		equal( T.stopTimer(endTime), timeElapsed, true );
-	}, 50);
+	endTime = startTime + 500; // manually add 500 miliseconds
+	timeElapsed = endTime - startTime;
+	equal( T.stopTimer(endTime), timeElapsed, true );
 });
