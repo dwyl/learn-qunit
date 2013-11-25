@@ -7,8 +7,14 @@ test( "Timer starts counting from *NOW* (when instructed)", function() {
 	equal( T.startTimer(startTime), startTime, true );
 });
 
-test( "Timer starts counting from *NOW* (when instructed)", function() {
-	var startTime = new Date().getTime();
+test( "Timer stops counting when stopTimer fires", function() {
+	var startTime   = new Date().getTime(),
+		endTime     = 0,
+		timeElapsed = 0;
 	equal( T.startTimer(startTime), startTime, true );
-	equal( T.startTimer(startTime), startTime, true );
+	setTimeout(function() {
+		endTime = new Date().getTime();
+		timeElapsed = endTime - startTime;
+		equal( T.stopTimer(endTime), timeElapsed, true );
+	}, 50);
 });
