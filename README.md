@@ -68,7 +68,7 @@ The main file you need to inspect is ./test/**index.html**:
 </html>
 ```
 
-(it references the necessary qunit.js files and **test.js** 
+(it references two JavaScript files **qunit.js** and **test.js** 
 both these files are in the ./**resources** directory)
 
 In the *body* of the **index.html** file there are two div elements 
