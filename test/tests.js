@@ -1,22 +1,14 @@
-// equivalent to a beforeEach setup function
-// see: http://stackoverflow.com/questions/1683416/
-// var mySetupFunc = function() {
-// 	T.startTime   = 0;
-// 	T.timeElapsed = 0;
-// }; 
-
-// QUnit.testStart(mySetupFunc);
-
-test( "Timer startTime is Zero when first initialze the app", function() {
+test( "startTime and timeElapsed should be Zero at start", function() {
 	equal( T.timerStarted, 0, true );
+	equal( T.timeElapsed, 0, true );
 });
 
-test( "Timer starts counting from *NOW* (when instructed)", function() {
+test( "startTimer() starts counting from *NOW* (when instructed)", function() {
 	var startTime = new Date().getTime();
 	equal( T.startTimer(startTime), startTime, true );
 });
 
-test( "Timer stops counting when stopTimer fires", function() {
+test( "stopTimer() stops counting", function() {
 	var startTime   = new Date().getTime(),
 		endTime     = 0,
 		timeElapsed = 0;
@@ -26,7 +18,7 @@ test( "Timer stops counting when stopTimer fires", function() {
 	equal( T.stopTimer(endTime), timeElapsed, true );
 });
 
-test( "Timer continues counting (picks up where left off)", function() {
+test( "startTimer() should continue counting after stopTimer()", function() {
 	T.resetTimer(); // reset (would prefer to do this in a beforeEach!)
 
 	// part 1 - the first interval
@@ -50,7 +42,7 @@ test( "Timer continues counting (picks up where left off)", function() {
 	equal( T.stopTimer(endTime), 12000, true );
 });
 
-test( "Timer resets to zero ready for a new activity", function() {
+test( "resetTimer() should reset to zero ready for a new activity", function() {
 	var startTime   = new Date().getTime(),
 		endTime     = 0,
 		timeElapsed = T.resetTimer();
