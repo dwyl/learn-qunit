@@ -2,7 +2,7 @@ test( "startTime and timeElapsed should be Zero at start", function() {
 	equal( T.timerStarted, 0, true );
 	equal( T.timeElapsed, 0, true );
 });
-
+/*
 test( "startTimer() starts counting from *NOW* (when instructed)", function() {
 	var startTime = new Date().getTime();
 	equal( T.startTimer(startTime), startTime, true );
@@ -52,3 +52,4 @@ test( "resetTimer() should reset to zero ready for a new activity", function() {
 	equal( T.stopTimer(endTime), timeElapsed, true );
 	equal( T.resetTimer(), 0, true );
 });
+*/

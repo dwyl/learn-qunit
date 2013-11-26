@@ -101,13 +101,33 @@ and **qunit.css** in the **/resources** directory,
 but on a "real" project you should use the **CDN** versions
 (see http://qunitjs.com/ *bottom* of the *homepage* for latest links.)
 
-### Write Unit Tests
+### Write A Unit Test
 
-See: ./test/**tests.js**
+Unit tests in QUnit are insanely simple!
+
+We expect a Timer to be Zero before we start it.
+
+```javascript
+test( "startTime and timeElapsed should be Zero at start", function() {
+	equal( T.timerStarted, 0, true ); // 
+	equal( T.timeElapsed, 0, true );  //
+});
+```
+
+For more tests see: ./test/**tests.js** 
+
+### Watch Unit Tests FAIL
+
+Our first fail is because we do not have a variable called "T":
+!["QUnit Test Fails no T"](http://i.imgur.com/U0STEpL.png "Qunit fails no T variable")
+
+
 
 ### Write Code to PASS the Unit Test
 
 ![All QUnit Tests Passing](http://i.imgur.com/dG4zLXH.png "All Tests Passing")
+
+### 
 
 
 ## Useful Links
@@ -120,6 +140,7 @@ See: ./test/**tests.js**
 - Blanket.js **Test Coverage**: http://blanketjs.org/
 - JQuery's TestSwarm: http://swarm.jquery.org/
 - QUnit "**Before Each**" (workaround): http://stackoverflow.com/questions/1683416/how-do-i-run-a-function-before-each-test-when-using-qunit
+- QUnit with Sinon (Backbone): http://addyosmani.com/blog/unit-testing-backbone-js-apps-with-qunit-and-sinonjs/
 
 > **PhantomJS** with QUnit: http://www.ianlewis.org/en/phantom-qunit-test-runner
 
@@ -130,4 +151,8 @@ See: ./test/**tests.js**
 http://anton.kovalyov.net/p/why-jshint/
 - Stack discussion of JSHint vs JSLint: 
 http://stackoverflow.com/questions/6803305/should-i-use-jslint-or-jshint-javascript-validation
+- Presentation on JavaScript Automation: http://kjbekkelund.github.io/presentations/js-build/#1
+- http://www.unboxedconsulting.com/blog/making-javascript-testing-in-the-browser-not-suck-with-sinon-js-part-1
 > @todo: add to Maintainable JS: http://net.tutsplus.com/tutorials/javascript-ajax/principles-of-maintainable-javascript/
+> @todo categorize: - JS Build tools: http://blog.millermedeiros.com/node-js-ant-grunt-and-other-build-tools/
+> JSHint: http://www.elijahmanor.com/2012/09/control-complexity-of-your-javascript.html
