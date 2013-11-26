@@ -112,6 +112,7 @@ but on a "real" project you should use the **CDN** versions
 - QUnit **Cookbook** (plenty of *examples*!): http://qunitjs.com/cookbook/
 - Blanket.js **Test Coverage**: http://blanketjs.org/
 - JQuery's TestSwarm: http://swarm.jquery.org/
+- QUnit "**Before Each**" (workaround): http://stackoverflow.com/questions/1683416/how-do-i-run-a-function-before-each-test-when-using-qunit
 
 > **PhantomJS** with QUnit: http://www.ianlewis.org/en/phantom-qunit-test-runner
 
