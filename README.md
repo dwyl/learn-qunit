@@ -75,7 +75,7 @@ In the *body* of the **index.html** file there are two div elements
 with ids of **quint** and **qunit-fixture** these are where QUnit will
 display the results of our unit tests.
 
-### Example Project: Stopwatch
+## Example Project: Stopwatch
 
 In a previous tutorial I built a simple stopwatch:
 https://github.com/nelsonic/stopwatch but its *deliberately* "minimalist" 
@@ -93,17 +93,19 @@ https://github.com/nelsonic/stopwatch but its *deliberately* "minimalist"
 #### Folder/File Structure
 
 - ./**lib** contains the **stopwatch.js** module file
+- ./**test** contains the **tests.js** file with all our tests and 
+**index.html** which is our QUnit "test runner" html file.
 
 **Note**: To facilitate *offline* learning I've included **qunit.js** 
 and **qunit.css** in the **/resources** directory, 
 but on a "real" project you should use the **CDN** versions
 (see http://qunitjs.com/ *bottom* of the *homepage* for latest links.)
 
-#### Write Unit Tests
+### Write Unit Tests
 
 See: ./test/**tests.js**
 
-#### Write Code to PASS the Unit Test
+### Write Code to PASS the Unit Test
 
 ![All QUnit Tests Passing](http://i.imgur.com/dG4zLXH.png "All Tests Passing")
 
