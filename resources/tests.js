@@ -49,3 +49,14 @@ test( "Timer continues counting (picks up where left off)", function() {
 	// timeElapsed = endTime - startTime + timeElapsed;
 	equal( T.stopTimer(endTime), 12000, true );
 });
+
+test( "Timer resets to zero ready for a new activity", function() {
+	var startTime   = new Date().getTime(),
+		endTime     = 0,
+		timeElapsed = 0;
+	equal( T.startTimer(startTime), startTime, true );
+	endTime = startTime + 2000; // manually add 1 second
+	timeElapsed = endTime - startTime;
+	equal( T.stopTimer(endTime), timeElapsed, true );
+	equal( T.resetTimer(), 0, true );
+});
