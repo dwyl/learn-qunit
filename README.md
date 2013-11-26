@@ -94,13 +94,18 @@ https://github.com/nelsonic/stopwatch but its *deliberately* "minimalist"
 
 - ./**lib** contains the **stopwatch.js** module file
 
-
 **Note**: To facilitate *offline* learning I've included **qunit.js** 
 and **qunit.css** in the **/resources** directory, 
 but on a "real" project you should use the **CDN** versions
 (see http://qunitjs.com/ *bottom* of the *homepage* for latest links.)
 
+#### Write Unit Tests
 
+See: ./test/**tests.js**
+
+#### Write Code to PASS the Unit Test
+
+![All QUnit Tests Passing](http://i.imgur.com/dG4zLXH.png "All Tests Passing")
 
 
 ## Useful Links
