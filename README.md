@@ -103,16 +103,21 @@ but on a "real" project you should use the **CDN** versions
 
 ### Write A Unit Test
 
-Unit tests in QUnit are insanely simple!
+Unit tests in QUnit are insanely simple as you are about to see!
 
-We expect a Timer to be Zero before we start it.
+We expect a Timer/Stopwatch to be Zero before we start it.
+![A stopwatch before start](http://i.imgur.com/78vJjWV.jpg "Stopwatch Zero")
+(that's a lot of zeros! one would be enough.)
 
+Lets write a test for that:
 ```javascript
-test( "startTime and timeElapsed should be Zero at start", function() {
-	equal( T.timerStarted, 0, true ); // 
-	equal( T.timeElapsed, 0, true );  //
+test( "timeElapsed should be Zero before we start the Timer", function() {
+	equal( T.timerStarted, 0, true );
 });
 ```
+This test assumes we have a **T**imer Module.
+The T module should have a variable called **timerStarted**
+which should be 0 (zero) before we start the timer.
 
 For more tests see: ./test/**tests.js** 
 
@@ -122,8 +127,32 @@ Our first fail is because we do not have a variable called "T":
 !["QUnit Test Fails no T"](http://i.imgur.com/U0STEpL.png "Qunit fails no T variable")
 
 
-
 ### Write Code to PASS the Unit Test
+
+We can fix this by creating the T (Timer) Module 
+(which we will use for our timer module)
+and creating our two main variables **
+
+```javascript
+var T = (function () { // create a basic module ("IIFE") for our Timer
+    'use strict';
+
+    var timeElapsed  = 0, // number of miliseconds since timerStarted
+        timerStarted = 0; // timestamp when timer was started
+
+    // allow external access to private variables & methods by returning them:
+    return {
+        timerStarted: timerStarted,
+        timeElapsed: timeElapsed
+    };
+}());
+```
+If this "*wrapped*" JavaScript function looks strange to you,
+read this: http://en.wikipedia.org/wiki/Immediately-invoked_function_expression
+
+Now our first unit test **passes**:
+
+![First Unit Test Passes](http://i.imgur.com/VxVbS0o.png "Test Passes")
 
 ![All QUnit Tests Passing](http://i.imgur.com/dG4zLXH.png "All Tests Passing")
 
