@@ -154,6 +154,15 @@ Now our first unit test **passes**:
 
 ![First Unit Test Passes](http://i.imgur.com/VxVbS0o.png "Test Passes")
 
+The next unit test we need to write is to start our timer:
+
+```javascript
+test( "startTimer() starts counting from *NOW* (when instructed)", function() {
+    var startTime = new Date().getTime();
+    equal( T.startTimer(startTime), startTime, true );
+});
+```
+
 ![All QUnit Tests Passing](http://i.imgur.com/dG4zLXH.png "All Tests Passing")
 
 ### 
