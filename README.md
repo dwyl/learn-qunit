@@ -112,7 +112,7 @@ We expect a Timer/Stopwatch to be Zero before we start it.
 Lets write a test for that:
 ```javascript
 test( "timeElapsed should be Zero before we start the Timer", function() {
-	equal( T.timerStarted, 0, true );
+	equal( T.timeElapsed, 0, true );
 });
 ```
 This test assumes we have a **T**imer Module.
@@ -129,30 +129,32 @@ Our first fail is because we do not have a variable called "T":
 
 ### Write Code to PASS the Unit Test
 
-We can fix this by creating the T (Timer) Module 
-(which we will use for our timer module)
-and creating our two main variables **
+First we create the T (Timer) Module and our two main variables 
+**timeElapsed** and **timeStarted
 
 ```javascript
 var T = (function () { // create a basic module ("IIFE") for our Timer
     'use strict';
 
     var timeElapsed  = 0, // number of miliseconds since timerStarted
-        timerStarted = 0; // timestamp when timer was started
+        timeStarted = 0; // timestamp when timer was started
 
     // allow external access to private variables & methods by returning them:
     return {
-        timerStarted: timerStarted,
+        timeStarted: timeStarted,
         timeElapsed: timeElapsed
     };
 }());
 ```
-If this "*wrapped*" JavaScript function looks strange to you,
-read this: http://en.wikipedia.org/wiki/Immediately-invoked_function_expression
+If this "*wrapped*" JavaScript function looks strange to you, 
+read this: <br />
+http://en.wikipedia.org/wiki/Immediately-invoked_function_expression
 
 Now our first unit test **passes**:
 
 ![First Unit Test Passes](http://i.imgur.com/VxVbS0o.png "Test Passes")
+
+### Repeat the TDD Process
 
 The next unit test we need to write is to start our timer:
 
@@ -162,6 +164,12 @@ test( "startTimer() starts counting from *NOW* (when instructed)", function() {
     equal( T.startTimer(startTime), startTime, true );
 });
 ```
+All this does is checks the timer started when we asked it to.
+
+![Second Test Failing](http://i.imgur.com/OFqGeff.png "Second Test Failing")
+
+
+
 
 ![All QUnit Tests Passing](http://i.imgur.com/dG4zLXH.png "All Tests Passing")
 
