@@ -106,7 +106,7 @@ but on a "real" project you should use the **CDN** versions
 Unit tests in QUnit are insanely simple as you are about to see!
 
 We expect a Timer/Stopwatch to be Zero before we start it.
-![A stopwatch before start](http://i.imgur.com/78vJjWV.jpg "Stopwatch Zero")
+![A stopwatch before start](https://raw.github.com/nelsonic/stopwatch/master/screenshots/Stopwatch-go.png "Stopwatch Zero")
 (that's a lot of zeros! one would be enough.)
 
 Lets write a test for that:
@@ -168,12 +168,36 @@ All this does is checks the timer started when we asked it to.
 
 ![Second Test Failing](http://i.imgur.com/OFqGeff.png "Second Test Failing")
 
+#### Write *Just* Enough Code to Pass this Test
 
+```javascript
+// Initialize the application
+var startTimer = function (startTime) {
+    timerStarted = startTime; // argument externally supplied
+    console.log("startTime: "+startTime);
+    return timerStarted;
+};
+```
 
+That does *just* enough to pass the test.
+![Second QUnit Test Passing](http://i.imgur.com/WHJtGpU.png "Second Test Pass")
+
+### [Rinse Repeat](http://www.urbandictionary.com/define.php?term=rinse%20repeat)
+
+Once you have your process nailed:
+
+- Write a test and watch it fail
+- Write *just* enough code to pass the test 
+(without breaking any other test that was already passing!)
+
+You can go through all the requirements for the stopwatch and *grow* your
+application one feature at a time.
 
 ![All QUnit Tests Passing](http://i.imgur.com/dG4zLXH.png "All Tests Passing")
 
-### 
+Once you have a full batch of passing tests you can relase the app!
+
+
 
 
 ## Useful Links
@@ -198,7 +222,9 @@ http://anton.kovalyov.net/p/why-jshint/
 - Stack discussion of JSHint vs JSLint: 
 http://stackoverflow.com/questions/6803305/should-i-use-jslint-or-jshint-javascript-validation
 - Presentation on JavaScript Automation: http://kjbekkelund.github.io/presentations/js-build/#1
-- http://www.unboxedconsulting.com/blog/making-javascript-testing-in-the-browser-not-suck-with-sinon-js-part-1
-> @todo: add to Maintainable JS: http://net.tutsplus.com/tutorials/javascript-ajax/principles-of-maintainable-javascript/
-> @todo categorize: - JS Build tools: http://blog.millermedeiros.com/node-js-ant-grunt-and-other-build-tools/
-> JSHint: http://www.elijahmanor.com/2012/09/control-complexity-of-your-javascript.html
+- Carl's QUnit + Sinon post:
+http://www.unboxedconsulting.com/blog/making-javascript-testing-in-the-browser-not-suck-with-sinon-js-part-1
+
+> @todo: add to Maintainable JS: http://net.tutsplus.com/tutorials/javascript-ajax/principles-of-maintainable-javascript/ <br />
+> @todo categorize: - JS Build tools: http://blog.millermedeiros.com/node-js-ant-grunt-and-other-build-tools/ <br />
+> JSHint: http://www.elijahmanor.com/2012/09/control-complexity-of-your-javascript.html <br />
