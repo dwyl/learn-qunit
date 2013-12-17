@@ -205,7 +205,7 @@ for Blanket.js
 
 1. Add **blanket.js** file to ./resources
 2. Referecent **blanket.js** script in index.html (our test runner) *below* qunit.
-3. Add the **data-cover** atribute to the <script> we are testing `<script src="lib/stopwatch.js" data-cover></script>`
+3. Add the **data-cover** atribute to the `<script>` we are testing `<script src="lib/stopwatch.js" data-cover></script>`
 4. Re-run the test runner (refresh the index.html page)
 5. Enable coverage checkbox and refresh again.
 
