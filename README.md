@@ -197,13 +197,12 @@ application one feature at a time.
 
 Once you have a full batch of passing tests you can relase the app!
 
-## Bonus Level: Blanket.js
+## Bonus Level: Blanket.js (Test Coverage)
 
-Following the 
-"[Getting Started Guide](https://github.com/alex-seville/blanket/blob/master/docs/getting_started_browser.md" 
-for Blanket.js
+Following the Blanket.js 
+[Getting Started Guide](https://github.com/alex-seville/blanket/blob/master/docs/getting_started_browser.md)
 
-1. Add **blanket.js** file to ./resources
+1. (Download and) Add **blanket.js** file to ./resources
 2. Referecent **blanket.js** script in index.html (our test runner) *below* qunit.
 3. Add the **data-cover** atribute to the `<script>` we are testing `<script src="lib/stopwatch.js" data-cover></script>`
 4. Re-run the test runner (refresh the index.html page)
@@ -211,7 +210,7 @@ for Blanket.js
 
 You should now see the test coverage for the project!
 
-![Blanket Test Coverage 100%](http://i.imgur.com/sEw2o1W.png "100% Test Coverage")
+![Blanket Test Coverage 100%](http://i.imgur.com/c2ZsOi4.png "100% Test Coverage")
 
 **Note**: for some reason this was giving an **error** in **Google Chrome**...
 This appears to be a *known issue*: 
@@ -223,10 +222,8 @@ Further investigation in the Chrome Developer Console reveals the following erro
 - Uncaught NetworkError: A network error occurred.  [**blanket.js:5317**]
 
 This error is due to accessing index.html on *localhost*. When I put the files
-on **S3** http://nelsonic.s3.amazonaws.com/learn-qunit/index.html?coverage=true
-it works flawlessly in all browsers. 
-[**try it**!](http://nelsonic.s3.amazonaws.com/learn-qunit/index.html?coverage=true)
-
+on **S3** it works flawlessly in all browsers. 
+http://nelsonic.s3.amazonaws.com/learn-qunit/index.html?coverage=true
 
 
 ## Useful Links
@@ -242,6 +239,8 @@ it works flawlessly in all browsers.
 - QUnit with Sinon (Backbone): http://addyosmani.com/blog/unit-testing-backbone-js-apps-with-qunit-and-sinonjs/
 
 > **PhantomJS** with QUnit: http://www.ianlewis.org/en/phantom-qunit-test-runner
+
+- - - ignore - - -
 
 ## Unrelated but worth reading
 @todo: add these to main JS tutorial!
