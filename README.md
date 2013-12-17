@@ -197,6 +197,35 @@ application one feature at a time.
 
 Once you have a full batch of passing tests you can relase the app!
 
+## Bonus Level: Blanket.js
+
+Following the 
+"[Getting Started Guide](https://github.com/alex-seville/blanket/blob/master/docs/getting_started_browser.md" 
+for Blanket.js
+
+1. Add **blanket.js** file to ./resources
+2. Referecent **blanket.js** script in index.html (our test runner) *below* qunit.
+3. Add the **data-cover** atribute to the <script> we are testing `<script src="lib/stopwatch.js" data-cover></script>`
+4. Re-run the test runner (refresh the index.html page)
+5. Enable coverage checkbox and refresh again.
+
+You should now see the test coverage for the project!
+
+![Blanket Test Coverage 100%](http://i.imgur.com/sEw2o1W.png "100% Test Coverage")
+
+**Note**: for some reason this was giving an **error** in **Google Chrome**...
+This appears to be a *known issue*: 
+http://stackoverflow.com/questions/14481029/how-to-stop-global-failures-in-qunit  
+I tried adding JQuery to index.html but still get the same error in Chrome.
+Further investigation in the Chrome Developer Console reveals the following error detail:
+
+- Cross origin requests are only supported for HTTP.
+- Uncaught NetworkError: A network error occurred.  [**blanket.js:5317**]
+
+This error is due to accessing index.html on *localhost*. When I put the files
+on **S3** http://nelsonic.s3.amazonaws.com/learn-qunit/index.html?coverage=true
+it works flawlessly in all browsers. 
+[**try it**!](http://nelsonic.s3.amazonaws.com/learn-qunit/index.html?coverage=true)
 
 
 
