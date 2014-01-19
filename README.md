@@ -3,6 +3,8 @@ learn-qunit
 
 A quick introduction to QUnit JavaScript Unit Testing.
 
+Try it: https://nelsonic.s3.amazonaws.com/learn-qunit/index.html?coverage=true
+
 ![QUnit Logo](http://i.imgur.com/Y5YzoDu.png "QUnit Logo")
 
 ## What is QUnit?
@@ -106,7 +108,7 @@ but on a "real" project you should use the **CDN** versions
 Unit tests in QUnit are insanely simple as you are about to see!
 
 We expect a Timer/Stopwatch to be Zero before we start it.
-![A stopwatch before start](http://i.imgur.com/78vJjWV.jpg "Stopwatch Zero")
+![A stopwatch before start](https://raw.github.com/nelsonic/stopwatch/master/screenshots/Stopwatch-go.png "Stopwatch Zero")
 (that's a lot of zeros! one would be enough.)
 
 Lets write a test for that:
@@ -169,11 +171,63 @@ All this does is checks the timer started when we asked it to.
 ![Second Test Failing](http://i.imgur.com/OFqGeff.png "Second Test Failing")
 
 
+#### Write *Just* Enough Code to Pass this Test
+
+```javascript
+// Initialize the application
+var startTimer = function (startTime) {
+    timerStarted = startTime; // argument externally supplied
+    console.log("startTime: "+startTime);
+    return timerStarted;
+};
+```
+
+That does *just* enough to pass the test.
+![Second QUnit Test Passing](http://i.imgur.com/WHJtGpU.png "Second Test Pass")
+
+### [Rinse Repeat](http://www.urbandictionary.com/define.php?term=rinse%20repeat)
+
+Once you have your process nailed:
+
+- Write a test and watch it fail
+- Write *just* enough code to pass the test 
+(without breaking any other test that was already passing!)
+
+You can go through all the requirements for the stopwatch and *grow* your
+application one feature at a time.
 
 
 ![All QUnit Tests Passing](http://i.imgur.com/dG4zLXH.png "All Tests Passing")
 
-### 
+Once you have a full batch of passing tests you can relase the app!
+
+## Bonus Level: Blanket.js (Test Coverage)
+
+Following the Blanket.js 
+[Getting Started Guide](https://github.com/alex-seville/blanket/blob/master/docs/getting_started_browser.md)
+
+1. (Download and) Add **blanket.js** file to ./resources
+2. Referecent **blanket.js** script in index.html (our test runner) *below* qunit.
+3. Add the **data-cover** atribute to the `<script>` we are testing `<script src="lib/stopwatch.js" data-cover></script>`
+4. Re-run the test runner (refresh the index.html page)
+5. Enable coverage checkbox and refresh again.
+
+You should now see the test coverage for the project!
+
+![Blanket Test Coverage 100%](http://i.imgur.com/c2ZsOi4.png "100% Test Coverage")
+
+**Note**: for some reason this was giving an **error** in **Google Chrome**...
+This appears to be a *known issue*: 
+http://stackoverflow.com/questions/14481029/how-to-stop-global-failures-in-qunit  
+I tried adding JQuery to index.html but still get the same error in Chrome.
+Further investigation in the Chrome Developer Console reveals the following error detail:
+
+- Cross origin requests are only supported for HTTP.
+- Uncaught NetworkError: A network error occurred.  [**blanket.js:5317**]
+
+This error is due to accessing index.html on *localhost*. When I put the files
+on **S3** it works flawlessly in all browsers. 
+http://nelsonic.s3.amazonaws.com/learn-qunit/index.html?coverage=true
 
 
 ## Useful Links
@@ -189,16 +243,3 @@ All this does is checks the timer started when we asked it to.
 - QUnit with Sinon (Backbone): http://addyosmani.com/blog/unit-testing-backbone-js-apps-with-qunit-and-sinonjs/
 
 > **PhantomJS** with QUnit: http://www.ianlewis.org/en/phantom-qunit-test-runner
-
-## Unrelated but worth reading
-@todo: add these to main JS tutorial!
-
-- Anton Kovalyov explains why he forked JSLint (to create JSHint): 
-http://anton.kovalyov.net/p/why-jshint/
-- Stack discussion of JSHint vs JSLint: 
-http://stackoverflow.com/questions/6803305/should-i-use-jslint-or-jshint-javascript-validation
-- Presentation on JavaScript Automation: http://kjbekkelund.github.io/presentations/js-build/#1
-- http://www.unboxedconsulting.com/blog/making-javascript-testing-in-the-browser-not-suck-with-sinon-js-part-1
-> @todo: add to Maintainable JS: http://net.tutsplus.com/tutorials/javascript-ajax/principles-of-maintainable-javascript/
-> @todo categorize: - JS Build tools: http://blog.millermedeiros.com/node-js-ant-grunt-and-other-build-tools/
-> JSHint: http://www.elijahmanor.com/2012/09/control-complexity-of-your-javascript.html
