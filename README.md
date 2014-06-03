@@ -35,7 +35,7 @@ Each time a comit is saved the entire suite of (*automated*) tests is run in
 *all* modern browsers **autmatically**!
 
 *Yes*, most of these *reasons* (for learning QUnit) are also applicable 
-to and Jasmine. <br />
+to Mocha and Jasmine. <br />
 I'm not advocating one testing framework over another.
 I've used Mocha JS quite a bit in the past and wrote a 
 [Learn Mocha tutorial](https://github.com/nelsonic/learn-mocha) 
