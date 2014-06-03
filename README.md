@@ -37,7 +37,7 @@ Each time a comit is saved the entire suite of (*automated*) tests is run in
 *Yes*, most of these *reasons* (for learning QUnit) are also applicable 
 to Mocha and Jasmine. <br />
 I'm not advocating one testing framework over another.
-I've used Mocha JS quit a bit in the past and wrote a 
+I've used Mocha JS quite a bit in the past and wrote a 
 [Learn Mocha tutorial](https://github.com/nelsonic/learn-mocha) 
 and I used [Jasmine](http://pivotal.github.io/jasmine) *extensively* 
 [@MakePositive](https://twitter.com/nelsonic/status/321304049263722496/photo/1)
@@ -50,7 +50,7 @@ JS testing frameworks and then *pick* the one you like best!
 git clone https://github.com/nelsonic/learn-qunit.git
 ```
 
-Open the **learn-quint** directory and have a look around.
+Open the **learn-qunit** directory and have a look around.
 The main file you need to inspect is ./test/**index.html**:
 
 ```html
@@ -65,16 +65,16 @@ The main file you need to inspect is ./test/**index.html**:
   <div id="qunit"></div>
   <div id="qunit-fixture"></div>
   <script src="resources/qunit.js"></script>
-  <script src="resources/tests.js"></script>
+  <script src="test/tests.js"></script>
 </body>
 </html>
 ```
 
-(it references two JavaScript files **qunit.js** and **test.js** 
-both these files are in the ./**resources** directory)
+(it references two JavaScript files **qunit.js** which is in the ./**resources** directory and **test.js** 
+which is in the ./**test** directory)
 
 In the *body* of the **index.html** file there are two div elements 
-with ids of **quint** and **qunit-fixture** these are where QUnit will
+with ids of **qunit** and **qunit-fixture** these are where QUnit will
 display the results of our unit tests.
 
 ## Example Project: Stopwatch
@@ -114,10 +114,12 @@ We expect a Timer/Stopwatch to be Zero before we start it.
 Lets write a test for that:
 ```javascript
 test( "timeElapsed should be Zero before we start the Timer", function() {
-	equal( T.timeElapsed, 0, true );
+  equal( T.timeElapsed, 0, true );
 });
 ```
-This test assumes we have a **T**imer Module.
+
+We pass what we're looking to test in as the first parameter to the _equal_ assertion and our **expected** result in as the second parameter.
+This test assumes we have a **T** (Timer) Module.
 The T module should have a variable called **timerStarted**
 which should be 0 (zero) before we start the timer.
 
@@ -125,6 +127,7 @@ For more tests see: ./test/**tests.js**
 
 ### Watch Unit Tests FAIL
 
+Run the tests by opening **index.html**.
 Our first fail is because we do not have a variable called "T":
 !["QUnit Test Fails no T"](http://i.imgur.com/U0STEpL.png "Qunit fails no T variable")
 
@@ -237,6 +240,7 @@ http://nelsonic.s3.amazonaws.com/learn-qunit/index.html?coverage=true
 - QUnit on **GitHub**: https://github.com/jquery/qunit
 - QUnit **API Docs**: http://api.qunitjs.com/category/all/
 - QUnit **Cookbook** (plenty of *examples*!): http://qunitjs.com/cookbook/
+- QUnit **Assertions** (other than ``equal()``): http://api.qunitjs.com/category/assert/
 - Blanket.js **Test Coverage**: http://blanketjs.org/
 - JQuery's TestSwarm: http://swarm.jquery.org/
 - QUnit "**Before Each**" (workaround): http://stackoverflow.com/questions/1683416/how-do-i-run-a-function-before-each-test-when-using-qunit
