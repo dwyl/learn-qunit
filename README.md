@@ -3,7 +3,7 @@ learn qunit
 
 A quick introduction to QUnit JavaScript Unit Testing.
 
-Try it: https://nelsonic.s3.amazonaws.com/learn-qunit/index.html?coverage=true
+Try it: https://qunit.herokuapp.com/
 
 ![QUnit Logo](http://i.imgur.com/Y5YzoDu.png "QUnit Logo")
 

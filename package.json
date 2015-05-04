@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/nelsonic/learn-qunit/issues"
   },
-  "homepage": "https://github.com/nelsonic/learn-qunit"
+  "homepage": "https://github.com/nelsonic/learn-qunit",
+  "dependencies": {
+    "hapi": "^8.4.0"
+  }
 }
