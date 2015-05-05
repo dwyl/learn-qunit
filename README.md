@@ -1,53 +1,43 @@
-learn qunit
+![QUnit Logo](http://i.imgur.com/Y5YzoDu.png "QUnit Logo") Learn QUnit
 ===========
 
-A quick introduction to QUnit JavaScript Unit Testing.
+A ***quick introduction*** to JavaScript unit ***testing with  QUnit.js***.
 
-Try it: https://qunit.herokuapp.com/
+## Why?
 
-![QUnit Logo](http://i.imgur.com/Y5YzoDu.png "QUnit Logo")
+If you have ever **built a website/app** and felt the ***pain*** of having to ***manually*** test (*and* ***re-test***)
+in ***several browsers***, this screenshot will look like ***nirvana*** to you:  
+
+![Test Swarm Results for QUnit](http://i.imgur.com/A63wZaA.png "Test Swarm Results")
+
+These are the **Continuous Integration** (CI) Tests for QUnit. <br />
+Each time a commit is saved the entire suite of (*automated*) tests is run in
+*all* modern browsers **automatically**!
 
 
-
-## What is QUnit?
+## What?
 
 The *official* description on http://qunitjs.com/ is:
 
 > QUnit is a **powerful**, ***easy-to-use*** JavaScript unit testing framework.  
 > It's used by the jQuery, jQuery UI and jQuery Mobile projects <br />
-> and is capable of testing ***any*** **generic** ***JavaScript*** code.
+> and is capable of testing ***any generic JavaScript*** code.
 
-## Why Should I Learn (How to Use) QUnit?
+## Key Advantages of QUnit?
 
-My **Top Five** reasons you should learn QUnit are:
+Our **Top Five** reasons you should learn QUnit are:
 
 1. ***Shallow learning curve***. (*start testing in 5 mins*!)
-2. ***Browser*** (*Nothing to Install or Configure*) ***or*** ***Node.js*** (*server code*)
+2. ***See*** your tests in the ***Browser*** (*Nothing to Install or Configure!* *... also works in* ***Node.js*** *server code*!)
 3. Great ***Documentation*** (*see **Useful Links** below*)
-4. ***Well established*** and used extensively by JQuery developers.
+4. ***Well established*** and used extensively by JQuery developers (*so you know it* ***works everywhere***!)
 5. Great ***Ecosystem***! (QMock, TestSwarm & Blanket.js -> *client-side code coverage*)
 
-
-If you have ever had to test (and re-test) a web site/app
-(*[ad nauseam](http://en.wikipedia.org/wiki/Ad_nauseam)*)
-in *several* browsers, <br />
-this screenshot will look like ***nirvana*** to you:
-![Test Swarm Results for QUnit](http://i.imgur.com/A63wZaA.png "Test Swarm Results")
-These are the **Continuous Integration** (CI) Tests for QUnit. <br />
-Each time a commit is saved the entire suite of (*automated*) tests is run in
-*all* modern browsers **autmatically**!
-
-*Yes*, most of these *reasons* (for learning QUnit) are also applicable
-to Mocha and Jasmine. <br />
-I'm not advocating one testing framework over another.  
-I've used Mocha quit a bit in the past and wrote a
-[Learn Mocha tutorial](https://github.com/nelsonic/learn-mocha)
-and used [Jasmine](http://pivotal.github.io/jasmine) *extensively*
-[@MakePositive](https://twitter.com/nelsonic/status/321304049263722496/photo/1)  
-... I actually *suggest* you ***make time*** to learn a *few*
-JS testing frameworks and then *pick* the one you like best!
-
 ## How?
+
+Try it: https://qunit.herokuapp.com/?coverage=true
+
+
 
 ```sh
 git clone https://github.com/nelsonic/learn-qunit.git
@@ -235,7 +225,6 @@ http://nelsonic.s3.amazonaws.com/learn-qunit/index.html?coverage=true
 
 ## Useful Links
 
-
 - QUnit **intro tutorial**: http://qunitjs.com/intro/
 - QUnit on **GitHub**: https://github.com/jquery/qunit
 - QUnit **API Docs**: http://api.qunitjs.com/category/all/
@@ -244,5 +233,15 @@ http://nelsonic.s3.amazonaws.com/learn-qunit/index.html?coverage=true
 - JQuery's TestSwarm: http://swarm.jquery.org/
 - QUnit "**Before Each**" (workaround): http://stackoverflow.com/questions/1683416/how-do-i-run-a-function-before-each-test-when-using-qunit
 - QUnit with Sinon (Backbone): http://addyosmani.com/blog/unit-testing-backbone-js-apps-with-qunit-and-sinonjs/
+
+## Notes
+
+*Yes*, we know that most of the *reasons* (for learning QUnit) described above are also applicable to Mocha, Jasmine, etc.  
+We are not saying one test framework is "better" than the other.  
+In the past 5 years we have made a point of using ***all*** the JavaScript testing frameworks we wrote a popular
+[Mocha.js Tutorial](https://github.com/nelsonic/learn-mocha)
+... we actually *suggest* you ***make time*** to ***learn a few***
+JS testing frameworks and then *pick* the one that suits your needs!
+
 
 > **PhantomJS** with QUnit: http://www.ianlewis.org/en/phantom-qunit-test-runner
