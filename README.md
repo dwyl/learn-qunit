@@ -1,18 +1,28 @@
 ![QUnit Logo](http://i.imgur.com/Y5YzoDu.png "QUnit Logo") Learn QUnit
 ===========
 
-A ***quick introduction*** to JavaScript unit ***testing with  QUnit.js***.
+A ***quick introduction*** to JavaScript unit ***testing with  QUnit.js*** for ***complete beginners***!
+
+## Just Started Developing Web/Mobile Apps?
+
+If you are *new* to Web/Mobile Application development,
+you might not see the (*many*) *benefits* of (*automated*) *testing* (*please* ***star***/*bookmark this page so you can come back to it later*) ... we still encourage *everyone* to *learn about* testing
+and have made every effort to keep this tutorial accessible to beginners, but acknowledge this is a bit "*theoretical*" until
+you have felt the *pain* of having an app "*breaking*" due to *insufficient testing*...
 
 ## Why?
-
-If you have ever **built a website/app** and felt the ***pain*** of having to ***manually*** test (*and* ***re-test***)
+,
+however if you have already built a few apps and felt the ***pain*** of having to ***manually*** test (*and* ***re-test***)
 in ***several browsers***, this screenshot will look like ***nirvana*** to you:  
 
-![Test Swarm Results for QUnit](http://i.imgur.com/A63wZaA.png "Test Swarm Results")
+![Test Swarm Results](http://i.imgur.com/A63wZaA.png "Test Swarm Results")
+
+Wether novice or experienced, (*automated*) testing
 
 These are the **Continuous Integration** (CI) Tests for QUnit. <br />
 Each time a commit is saved the entire suite of (*automated*) tests is run in
-*all* modern browsers **automatically**!
+*all* modern browsers **automatically** to *confirm that everything still works
+as expected*.
 
 
 ## What?
