@@ -1,0 +1,30 @@
+{
+  "name": "learn-qunit",
+  "version": "1.0.0",
+  "description": "Qunit browser & node.js unit testing tutorial",
+  "main": "static-server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nelsonic/learn-qunit.git"
+  },
+  "keywords": [
+    "qunit",
+    "testing",
+    "tutorial"
+  ],
+  "author": "@nelsonic <contact.nelsonic@gmail.com> (https://github.com/nelsonic)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nelsonic/learn-qunit/issues"
+  },
+  "homepage": "https://github.com/nelsonic/learn-qunit",
+  "dependencies": {
+    "hapi": "^8.4.0"
+  }
+}
