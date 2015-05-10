@@ -44,6 +44,8 @@ This failure will only be visible months/years later (*usually after
 Competent civil engineers would not *dream* of constructing a building without
 a foundation, as software engineers we should have the same approach.
 
+[![Building in 6 Days](http://i.imgur.com/lFohP7J.jpg)](https://youtu.be/PNv13fY_3jY?t=1m28s "Building Construction Time Lapse - Click to Watch!")
+
 The ***confidence*** that comes when building upon a solid foundation only arises if we ***put in the time*** to *first* ***dig a foundation***.
 
 ### Car Designer - *Testing Mindset*
@@ -57,7 +59,7 @@ We don't like thinking about car accidents (*they are brutal and often fatal!*)
 but a *great* car designer will *always* consider the "*worst case scenario*"
 for their vehicle and *design* with that eventuality in mind.
 
-[![Lambo Crash and Burn](http://i.imgur.com/LqZpgnV.jpg)](https://youtu.be/erxJcpTkhek?t=50s "Lambo Crash and Burn - Click to Watch!")
+[![Lambo Crash and Burn](http://i.imgur.com/XcWqHxz.jpg)](https://youtu.be/erxJcpTkhek?t=50s "Lambo Crash and Burn - Click to Watch!")
 
 Sure, the fast convertible is nice to *look at*, but if you had to pick a car for your loved ones, would it be sports car
 or the [*Volvo*](https://www.youtube.com/watch?v=46Zdvwacxik)
