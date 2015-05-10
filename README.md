@@ -1,23 +1,76 @@
-![QUnit Logo](http://i.imgur.com/Y5YzoDu.png "QUnit Logo") Learn QUnit
+![QUnit Logo](http://i.imgur.com/Y5YzoDu.png "QUnit Logo") Learn QUnit Test Driven Development (TDD)
 ===========
 
 A ***quick introduction*** to JavaScript unit ***testing with  QUnit.js*** for ***complete beginners***!
 
-## Just Started Developing Web/Mobile Apps?
+## *Just Started* Developing Web/Mobile Apps?
 
 If you are *new* to Web/Mobile Application development,
-you might not see the (*many*) *benefits* of (*automated*) *testing* (*please* ***star***/*bookmark this page so you can come back to it later*) ... we still encourage *everyone* to *learn about* testing
-and have made every effort to keep this tutorial accessible to beginners, but acknowledge this is a bit "*theoretical*" until
-you have felt the *pain* of having an app "*breaking*" due to *insufficient testing*...
+you might *overlook* the (*many*) *benefits* of (*automated*) *testing* (*please* ***star***/*bookmark this page so you can come back to it later*) ... we still ***encourage everyone*** to ***learn about testing***
+and have made every effort to keep this tutorial *accessible* to beginners (*simple code/examples*), but *acknowledge* this is ***a bit "theoretical"*** until
+you have felt the ***pain*** of having an app "***breaking***" due to
+***insufficient testing*** ...
+
+## Chose Your Analogy
+
+### Musicians - Learn *Fundamental Skills* on their Instrument
+
+Most of us have at least *attempted* to learn a musical instrument.
+Learning Test Driven Development (TDD) is like learning/practicing "*scales*"
+when learning to play a musical instrument.
+It can seem like a "*waste of time*" to a ~~young~~ *novice musician* who *only*
+wants to learn *enough* to play their favourite song, *but* by learning/practicing sequences of notes in quick succession, we are able to unlock a whole
+other level of musical excellence.
+
+[![Vanessa-Mae plays Toccata](http://i.imgur.com/yySHc8q.png)](https://youtu.be/Hg8Fa_EUQqY?t=1m24s "Vanessa-Mae plays Toccata - Click to Play")
+
+*Persistence* pays *handsomly*. (*Automated*) *Testing* is one of the *fundamental skills* of *software development*.
+*Embrace* it if you want to unlock the next level in your ***creativity***.
+
+### Buildings - Need a *Good Foundation*
+
+Consider what it takes to build even a modest *physical* building.
+Anything over a single level requires much consideration and planning.
+If you are *lucky* enough to live in a country with *well established building
+regulations* the following sight will be unfamiliar to you:
+
+![leaning building](http://i.imgur.com/IvLiZWL.jpg)
+
+When a building is constructed by inexperienced people,
+they often "*forget*" to dig/lay a foundation.
+This failure will only be visible months/years later (*usually after
+  the cowboy builders have made off with the cash*).
+(Automated) tests are the foundation of great software.
+Competent civil engineers would not *dream* of constructing a building without
+a foundation, as software engineers we should have the same approach.
+
+The ***confidence*** that comes when building upon a solid foundation only arises if we ***put in the time*** to *first* ***dig a foundation***.
+
+### Car Designer - *Testing Mindset*
+
+*Thinking about* ***how*** you will ***test your solution*** to a problem, changes the way you *perceive* the problem. It might seem initially counter-intuitive to
+think about the test *before* you have solved the problem, but we *urge* you to consider the perspective of a car designer:
+
+![car designer crash test](http://i.imgur.com/NpJuu14.jpg)
+
+We don't like thinking about car accidents (*they are brutal and often fatal!*)
+but a *great* car designer will *always* consider the "*worst case scenario*"
+for their vehicle and *design* with that eventuality in mind.
+
+Put your [lab coat](https://github.com/nelsonic/nelsonic.github.io/issues/6) on
+and embrace the ***discipline*** of proactively thinking about how to test your creations!
+
+[![Volvo Crash Test](http://i.imgur.com/q1Z9NwO.png)](https://www.youtube.com/watch?v=uoENbWQFE_I "Volvo Crash Test - Click to Watch")
 
 ## Why?
-,
-however if you have already built a few apps and felt the ***pain*** of having to ***manually*** test (*and* ***re-test***)
+
+If you have already built a few apps and felt the ***pain*** of having to ***manually*** test (*and* ***re-test***)
 in ***several browsers***, this screenshot will look like ***nirvana*** to you:  
 
 ![Test Swarm Results](http://i.imgur.com/A63wZaA.png "Test Swarm Results")
 
-Wether novice or experienced, (*automated*) testing
+Wether novice or experienced, (*automated*) testing is the foundation we need
+to build great software.
 
 These are the **Continuous Integration** (CI) Tests for QUnit. <br />
 Each time a commit is saved the entire suite of (*automated*) tests is run in
