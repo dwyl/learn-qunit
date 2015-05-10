@@ -34,7 +34,7 @@ Anything over a single level requires much consideration and planning.
 If you are *lucky* enough to live in a country with *well established building
 regulations* the following sight will be unfamiliar to you:
 
-![leaning building](http://i.imgur.com/IvLiZWL.jpg)
+[![Building Collapse](http://i.imgur.com/rlGgewO.png)](https://youtu.be/tzGJs-uyaSY?t=18s "Building Collapse - Click to Watch")
 
 When a building is constructed by inexperienced people,
 they often "*forget*" to dig/lay a foundation.
@@ -57,10 +57,16 @@ We don't like thinking about car accidents (*they are brutal and often fatal!*)
 but a *great* car designer will *always* consider the "*worst case scenario*"
 for their vehicle and *design* with that eventuality in mind.
 
-Put your [lab coat](https://github.com/nelsonic/nelsonic.github.io/issues/6) on
-and embrace the ***discipline*** of proactively thinking about how to test your creations!
+[![Lambo Crash and Burn](http://i.imgur.com/LqZpgnV.jpg)](https://youtu.be/erxJcpTkhek?t=50s "Lambo Crash and Burn - Click to Watch!")
+
+Sure, the fast convertible is nice to *look at*, but if you had to pick a car for your loved ones, would it be sports car
+or the [*Volvo*](https://www.youtube.com/watch?v=46Zdvwacxik)
+with the dedicated team of life-saving expert engineers.
 
 [![Volvo Crash Test](http://i.imgur.com/q1Z9NwO.png)](https://www.youtube.com/watch?v=uoENbWQFE_I "Volvo Crash Test - Click to Watch")
+
+Put your [lab coat](https://github.com/nelsonic/nelsonic.github.io/issues/6) on
+and embrace the ***discipline*** of proactively thinking about how to test your creations!
 
 ## Why?
 
