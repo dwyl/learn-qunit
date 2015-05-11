@@ -73,9 +73,19 @@ test( "renderTimer() display leading zeros", function() {
     var s = 1000 * 7;           // 7 seconds
     var leadingZeroStartTime = h + m + s + 6;
     // start the timer yesterday! :-o
-    T.timing(); // start interval
     var startTime = new Date().getTime() - leadingZeroStartTime;
     T.startTimer(startTime);
     // equal( T.startTimer(startTime), startTime);
     equal( T.renderTimer(startTime), '09:08:07:00');
+});
+
+test("Start Timing() programatically", function(Q) {
+    var startTime = new Date().getTime();
+    Q.equal( T.startTimer(startTime), startTime);
+    var done = Q.async();
+    T.timing(); // start interval
+    setTimeout(function() {
+      ok( true, "timing done" );
+      done();
+    }, 100);
 });
