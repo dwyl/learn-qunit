@@ -107,10 +107,8 @@ Our **Top Five** reasons you should learn QUnit are:
 
 ## How? ... Example Project: Stopwatch
 
-In a previous tutorial we built a simple stopwatch:
-https://github.com/nelsonic/stopwatch its *deliberately* "minimalist"
-(did *not* have tests and all code was contained in a single html file)
-*This* time we are going to do it the "*right*" way (*Test Driven Development*!)
+We are going to build a **StopWatch** mini web application.  
+This is what the end result looks like: (Try it!) https://qunit.herokuapp.com/?coverage=true
 
 #### What Functionality Does Our Stopwatch Need?
 
@@ -130,10 +128,6 @@ https://github.com/nelsonic/stopwatch its *deliberately* "minimalist"
 and **qunit.css** in the **/resources** directory,
 but on a "real" project you should use the **CDN** versions
 (see http://qunitjs.com/ *bottom* of the *homepage* for latest links.)
-
-
-We are going to build a **StopWatch** mini web application.
-This is what the end result looks like: (Try it!) https://qunit.herokuapp.com/?coverage=true
 
 
 
