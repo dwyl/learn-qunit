@@ -7,14 +7,14 @@ A ***quick introduction*** to JavaScript unit ***testing with  QUnit.js*** for *
 ## *Just Started* Developing Web/Mobile Apps?
 
 If you are *new* to Web/Mobile Application development,
-you might *overlook* the (*many*) *benefits* of (*automated*) *testing* (*please* ***star***/*bookmark this page so you can come back to it later*) ... we still ***encourage everyone*** to ***learn about testing***
+its *easy* to *overlook* the (*many*) *benefits* of (*automated*) *testing* (*please* ***star***/*bookmark this page so you can come back to it later*) ... we still ***encourage everyone*** to ***learn about testing***
 and have made every effort to keep this tutorial *accessible* to beginners (*simple code/examples*), but *acknowledge* this is ***a bit "theoretical"*** until
 you have felt the ***pain*** of having an app "***breaking***" due to
 ***insufficient testing*** ...
 
 ## (*Chose Your Favourite*) Analogy
 
-### Musicians Learn *Fundamental Skills* on their Instrument *Before* Playing a Concert
+### Musicians Learn *Fundamental Skills* on their Instrument
 
 Most of us have at least *attempted* to learn a musical instrument.
 Learning Test Driven Development (TDD) is like learning/practicing "*scales*"
@@ -49,7 +49,7 @@ a foundation, as software engineers we should have the same approach.
 
 The ***confidence*** that comes when building upon a solid foundation only arises if we ***put in the time*** to *first* ***dig a foundation***.
 
-### Car Designer Have a *Testing Mindset*
+### Car Designers Have a *Testing Mindset*
 
 *Thinking about* ***how*** you will ***test your solution*** to a problem, changes the way you *perceive* the problem. It might seem initially counter-intuitive to
 think about the test *before* you have solved the problem, but we *urge* you to consider the perspective of a car designer:
@@ -62,7 +62,7 @@ for their vehicle and *design* with that eventuality in mind.
 
 [![Lambo Crash and Burn](http://i.imgur.com/XcWqHxz.jpgg)](https://youtu.be/erxJcpTkhek?t=50s "Lambo Crash and Burn - Click to Watch!")
 
-Sure, the fast convertible is nice to *look at*, but if you had to pick a car for your loved ones, would it be sports car
+Sure, the fast convertible *looks nice*, but if you had to ***pick a car for your loved ones***, would it be sports car
 or the [*Volvo*](https://www.youtube.com/watch?v=46Zdvwacxik)
 with the dedicated team of life-saving expert engineers.
 
@@ -196,7 +196,7 @@ We expect a Timer/Stopwatch to be Zero before we start it.
 Lets write a test for that:
 ```javascript
 test( "timeElapsed should be Zero before we start the Timer", function() {
-  equal( T.timeElapsed, 0, true );
+  equal( T.timeElapsed, 0, 'Message: timer is zero at start' );
 });
 ```
 
@@ -326,6 +326,7 @@ https://qunit.herokuapp.com/?coverage=true
 - JQuery's TestSwarm: http://swarm.jquery.org/
 - QUnit "**Before Each**" (workaround): http://stackoverflow.com/questions/1683416/how-do-i-run-a-function-before-each-test-when-using-qunit
 - QUnit with Sinon (Backbone): http://addyosmani.com/blog/unit-testing-backbone-js-apps-with-qunit-and-sinonjs/
+- QUnit ***Asynchronous*** tests: https://api.qunitjs.com/async/
 
 ## Notes
 
@@ -336,5 +337,7 @@ In the past 5 years we have made a point of using ***all*** the JavaScript testi
 ... we actually *suggest* you ***make time*** to ***learn a few***
 JS testing frameworks and then *pick* the one that suits your needs!
 
+## What's Next?
 
-> Next: **PhantomJS** with QUnit: http://www.ianlewis.org/en/phantom-qunit-test-runner
++ **SauceLabs Cross-Browser Testing**: https://github.com/docdis/learn-saucelabs
++ **PhantomJS** with QUnit: http://www.ianlewis.org/en/phantom-qunit-test-runner
