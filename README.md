@@ -312,7 +312,7 @@ Further investigation in the Chrome Developer Console reveals the following erro
 
 This error is due to accessing index.html on *localhost*. When I put the files
 on **S3** it works flawlessly in all browsers.
-http://nelsonic.s3.amazonaws.com/learn-qunit/index.html?coverage=true
+https://qunit.herokuapp.com/?coverage=true
 
 
 ## Useful Links
@@ -337,4 +337,4 @@ In the past 5 years we have made a point of using ***all*** the JavaScript testi
 JS testing frameworks and then *pick* the one that suits your needs!
 
 
-> **PhantomJS** with QUnit: http://www.ianlewis.org/en/phantom-qunit-test-runner
+> Next: **PhantomJS** with QUnit: http://www.ianlewis.org/en/phantom-qunit-test-runner

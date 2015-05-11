@@ -51,3 +51,29 @@ test( "resetTimer() should reset to zero ready for a new activity", function() {
     equal( T.stopTimer(endTime), timeElapsed);
     equal( T.resetTimer(), 0);
 });
+
+test( "renderTimer() displays a string digits separated by colons", function() {
+    //                      hours   minutes   seconds   miliseconds
+    var dayInMilliseconds =  24   *   60    *   60    *   1000;
+    // start the timer yesterday! :-o
+    var startTime = new Date().getTime() - dayInMilliseconds + 1000 ;
+    // equal( T.startTimer(startTime), startTime);\
+    T.resetTimer(); // reset before restart
+    console.log('>>>>>>>' + startTime + ' | dayInMilliseconds: '+ dayInMilliseconds)
+    console.log('>>>>>>>'+ new Date(startTime));
+    equal( T.renderTimer(startTime), '23:59:59:00')
+});
+
+// display leading zeros for hours/seconds/minutes less than 10
+// test( "renderTimer() display leading zeros", function() {
+//     // simulate timer at 09:08:07:06 to exercise leading zeros
+//     var h = 60 * 60 * 1000 * 9; // 9 hours in milliseconds
+//     var m = 60 * 1000 * 8;      // 8 minutes
+//     var s = 1000 * 7;           // 7 seconds
+//     var leadingZeroStartTime = h + m + s + 6;
+//     // start the timer yesterday! :-o
+//     // T.timing(); // start interval
+//     var startTime = new Date().getTime() - leadingZeroStartTime ;
+//     // equal( T.startTimer(startTime), startTime);
+//     equal( T.renderTimer(startTime), '09:08:07:06')
+// });
