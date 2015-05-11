@@ -1,4 +1,5 @@
-![QUnit Logo](http://i.imgur.com/Y5YzoDu.png "QUnit Logo") Learn QUnit Test Driven Development (TDD)
+![QUnit Logo](http://i.imgur.com/Y5YzoDu.png "QUnit Logo")
+Learn QUnit Test Driven Development (TDD)
 ===========
 
 A ***quick introduction*** to JavaScript unit ***testing with  QUnit.js*** for ***complete beginners***!
@@ -11,9 +12,9 @@ and have made every effort to keep this tutorial *accessible* to beginners (*sim
 you have felt the ***pain*** of having an app "***breaking***" due to
 ***insufficient testing*** ...
 
-## Chose Your Analogy
+## (*Chose Your Favourite*) Analogy
 
-### Musicians - Learn *Fundamental Skills* on their Instrument
+### Musicians Learn *Fundamental Skills* on their Instrument *Before* Playing a Concert
 
 Most of us have at least *attempted* to learn a musical instrument.
 Learning Test Driven Development (TDD) is like learning/practicing "*scales*"
@@ -27,7 +28,7 @@ other level of musical excellence.
 *Persistence* pays *handsomly*. (*Automated*) *Testing* is one of the *fundamental skills* of *software development*.
 *Embrace* it if you want to unlock the next level in your ***creativity***.
 
-### Buildings - Need a *Good Foundation*
+### Buildings Need a *Good Foundation*
 
 Consider what it takes to build even a modest *physical* building.
 Anything over a single level requires much consideration and planning.
@@ -48,7 +49,7 @@ a foundation, as software engineers we should have the same approach.
 
 The ***confidence*** that comes when building upon a solid foundation only arises if we ***put in the time*** to *first* ***dig a foundation***.
 
-### Car Designer - *Testing Mindset*
+### Car Designer Have a *Testing Mindset*
 
 *Thinking about* ***how*** you will ***test your solution*** to a problem, changes the way you *perceive* the problem. It might seem initially counter-intuitive to
 think about the test *before* you have solved the problem, but we *urge* you to consider the perspective of a car designer:
@@ -59,7 +60,7 @@ We don't like thinking about car accidents (*they are brutal and often fatal!*)
 but a *great* car designer will *always* consider the "*worst case scenario*"
 for their vehicle and *design* with that eventuality in mind.
 
-[![Lambo Crash and Burn](http://i.imgur.com/XcWqHxz.jpg)](https://youtu.be/erxJcpTkhek?t=50s "Lambo Crash and Burn - Click to Watch!")
+[![Lambo Crash and Burn](http://i.imgur.com/XcWqHxz.jpgg)](https://youtu.be/erxJcpTkhek?t=50s "Lambo Crash and Burn - Click to Watch!")
 
 Sure, the fast convertible is nice to *look at*, but if you had to pick a car for your loved ones, would it be sports car
 or the [*Volvo*](https://www.youtube.com/watch?v=46Zdvwacxik)
@@ -67,18 +68,18 @@ with the dedicated team of life-saving expert engineers.
 
 [![Volvo Crash Test](http://i.imgur.com/q1Z9NwO.png)](https://www.youtube.com/watch?v=uoENbWQFE_I "Volvo Crash Test - Click to Watch")
 
-Put your [lab coat](https://github.com/nelsonic/nelsonic.github.io/issues/6) on
-and embrace the ***discipline*** of proactively thinking about how to test your creations!
+Put your [*lab coat*](https://github.com/nelsonic/nelsonic.github.io/issues/6) on
+and *embrace* the ***discipline*** of proactively thinking about how to test your creations!
 
 ## Why?
+
+Wether novice or experienced, (*automated*) testing is the foundation we need
+to build great apps.
 
 If you have already built a few apps and felt the ***pain*** of having to ***manually*** test (*and* ***re-test***)
 in ***several browsers***, this screenshot will look like ***nirvana*** to you:  
 
 ![Test Swarm Results](http://i.imgur.com/A63wZaA.png "Test Swarm Results")
-
-Wether novice or experienced, (*automated*) testing is the foundation we need
-to build great software.
 
 These are the **Continuous Integration** (CI) Tests for QUnit. <br />
 Each time a commit is saved the entire suite of (*automated*) tests is run in
@@ -173,8 +174,8 @@ https://github.com/nelsonic/stopwatch but its *deliberately* "minimalist"
 
 #### Folder/File Structure
 
-- ./**lib** contains the **stopwatch.js** module file
-- ./**test** contains the **tests.js** file with all our tests and
+- /**lib** contains the **stopwatch.js** module file
+- /**test** contains the **tests.js** file with all our tests and
 **index.html** which is our QUnit "test runner" html file.
 
 **Note**: To facilitate *offline* learning I've included **qunit.js**
@@ -187,7 +188,9 @@ but on a "real" project you should use the **CDN** versions
 Unit tests in QUnit are insanely simple as you are about to see!
 
 We expect a Timer/Stopwatch to be Zero before we start it.
-![A stopwatch before start](https://raw.github.com/nelsonic/stopwatch/master/screenshots/Stopwatch-go.png "Stopwatch Zero")
+
+![A stopwatch before start](https://raw.githubusercontent.com/nelsonic/nelsonic.github.io/master/img/Stopwatch-go.png "Stopwatch Zero")
+
 (that's a lot of zeros! one would be enough.)
 
 Lets write a test for that:
