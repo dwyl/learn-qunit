@@ -1,50 +1,124 @@
-learn-qunit
+![QUnit Logo](http://i.imgur.com/Y5YzoDu.png "QUnit Logo")
+Learn QUnit Test Driven Development (TDD)
 ===========
 
-A quick introduction to QUnit JavaScript Unit Testing.
+A ***quick introduction*** to JavaScript unit ***testing with  QUnit.js*** for ***complete beginners***!
 
-Try it: https://nelsonic.s3.amazonaws.com/learn-qunit/index.html?coverage=true
+## *Just Started* Developing Web/Mobile Apps?
 
-![QUnit Logo](http://i.imgur.com/Y5YzoDu.png "QUnit Logo")
+If you are *new* to Web/Mobile Application development,
+you might *overlook* the (*many*) *benefits* of (*automated*) *testing* (*please* ***star***/*bookmark this page so you can come back to it later*) ... we still ***encourage everyone*** to ***learn about testing***
+and have made every effort to keep this tutorial *accessible* to beginners (*simple code/examples*), but *acknowledge* this is ***a bit "theoretical"*** until
+you have felt the ***pain*** of having an app "***breaking***" due to
+***insufficient testing*** ...
 
-## What is QUnit?
+## (*Chose Your Favourite*) Analogy
+
+### Musicians Learn *Fundamental Skills* on their Instrument *Before* Playing a Concert
+
+Most of us have at least *attempted* to learn a musical instrument.
+Learning Test Driven Development (TDD) is like learning/practicing "*scales*"
+when learning to play a musical instrument.
+It can seem like a "*waste of time*" to a ~~young~~ *novice musician* who *only*
+wants to learn *enough* to play their favourite song, *but* by learning/practicing sequences of notes in quick succession, we are able to unlock a whole
+other level of musical excellence.
+
+[![Vanessa-Mae plays Toccata](http://i.imgur.com/yySHc8q.png)](https://youtu.be/Hg8Fa_EUQqY?t=1m24s "Vanessa-Mae plays Toccata - Click to Play")
+
+*Persistence* pays *handsomly*. (*Automated*) *Testing* is one of the *fundamental skills* of *software development*.
+*Embrace* it if you want to unlock the next level in your ***creativity***.
+
+### Buildings Need a *Good Foundation*
+
+Consider what it takes to build even a modest *physical* building.
+Anything over a single level requires much consideration and planning.
+If you are *lucky* enough to live in a country with *well established building
+regulations* the following sight will be unfamiliar to you:
+
+[![Building Collapse](http://i.imgur.com/rlGgewO.png)](https://youtu.be/tzGJs-uyaSY?t=18s "Building Collapse - Click to Watch")
+
+When a building is constructed by inexperienced people,
+they often "*forget*" to dig/lay a foundation.
+This failure will only be visible months/years later (*usually after
+  the cowboy builders have made off with the cash*).
+(Automated) tests are the foundation of great software.
+Competent civil engineers would not *dream* of constructing a building without
+a foundation, as software engineers we should have the same approach.
+
+[![Building in 6 Days](http://i.imgur.com/lFohP7J.jpg)](https://youtu.be/PNv13fY_3jY?t=1m28s "Building Construction Time Lapse - Click to Watch!")
+
+The ***confidence*** that comes when building upon a solid foundation only arises if we ***put in the time*** to *first* ***dig a foundation***.
+
+### Car Designer Have a *Testing Mindset*
+
+*Thinking about* ***how*** you will ***test your solution*** to a problem, changes the way you *perceive* the problem. It might seem initially counter-intuitive to
+think about the test *before* you have solved the problem, but we *urge* you to consider the perspective of a car designer:
+
+![car designer crash test](http://i.imgur.com/NpJuu14.jpg)
+
+We don't like thinking about car accidents (*they are brutal and often fatal!*)
+but a *great* car designer will *always* consider the "*worst case scenario*"
+for their vehicle and *design* with that eventuality in mind.
+
+[![Lambo Crash and Burn](http://i.imgur.com/XcWqHxz.jpgg)](https://youtu.be/erxJcpTkhek?t=50s "Lambo Crash and Burn - Click to Watch!")
+
+Sure, the fast convertible is nice to *look at*, but if you had to pick a car for your loved ones, would it be sports car
+or the [*Volvo*](https://www.youtube.com/watch?v=46Zdvwacxik)
+with the dedicated team of life-saving expert engineers.
+
+[![Volvo Crash Test](http://i.imgur.com/q1Z9NwO.png)](https://www.youtube.com/watch?v=uoENbWQFE_I "Volvo Crash Test - Click to Watch")
+
+Put your [*lab coat*](https://github.com/nelsonic/nelsonic.github.io/issues/6) on
+and *embrace* the ***discipline*** of proactively thinking about how to test your creations!
+
+## Why?
+
+Wether novice or experienced, (*automated*) testing is the foundation we need
+to build great apps.
+
+If you have already built a few apps and felt the ***pain*** of having to ***manually*** test (*and* ***re-test***)
+in ***several browsers***, this screenshot will look like ***nirvana*** to you:  
+
+![Test Swarm Results](http://i.imgur.com/A63wZaA.png "Test Swarm Results")
+
+These are the **Continuous Integration** (CI) Tests for QUnit. <br />
+Each time a commit is saved the entire suite of (*automated*) tests is run in
+*all* modern browsers **automatically** to *confirm that everything still works
+as expected*.
+
+
+## What?
 
 The *official* description on http://qunitjs.com/ is:
 
-> QUnit is a **powerful**, ***easy-to-use*** JavaScript unit testing framework.
+> QUnit is a **powerful**, ***easy-to-use*** JavaScript unit testing framework.  
 > It's used by the jQuery, jQuery UI and jQuery Mobile projects <br />
-> and is capable of testing any **generic** JavaScript code.
+> and is capable of testing ***any generic JavaScript*** code.
 
-## Why Should I Learn (How to Use) QUnit?
+## Key Advantages of QUnit?
 
-My **Top Five** reasons you should learn QUnit are:
+Our **Top Five** reasons you should learn QUnit are:
 
 1. ***Shallow learning curve***. (*start testing in 5 mins*!)
-2. ***Browser Based*** so there's ***Nothing to Install*** or *Configure*! 
-3. Great ***Documentation*** (see **Useful Links** below)
-4. ***Well established*** and used extensively by JQuery developers.
-5. Great ***Ecosystem***! (QMock, TestSwarm & Blanket.js -> *code coverage*)
+2. ***See*** your tests in the ***Browser*** (*Nothing to Install or Configure!* *... also works in* ***Node.js*** *server code*!)
+3. Great ***Documentation*** (*see **Useful Links** below*)
+4. ***Well established*** and used extensively by JQuery developers (*so you know it* ***works everywhere***!)
+5. Great ***Ecosystem***! (QMock, TestSwarm & Blanket.js -> *client-side code coverage*)
 
-If you have ever had to test (and re-test) a web site/app 
-(*[ad nauseam](http://en.wikipedia.org/wiki/Ad_nauseam)*)
-in *several* browsers, <br />
-this screenshot will look like ***nirvana*** to you:
-![Test Swarm Results for QUnit](http://i.imgur.com/A63wZaA.png "Test Swarm Results")
-These are the **Continuous Integration** (CI) Tests for QUnit. <br />
-Each time a comit is saved the entire suite of (*automated*) tests is run in
-*all* modern browsers **autmatically**!
+## How?
 
-*Yes*, most of these *reasons* (for learning QUnit) are also applicable 
+Try it: https://qunit.herokuapp.com/?coverage=true
+
+*Yes*, most of these *reasons* (for learning QUnit) are also applicable
 to Mocha and Jasmine. <br />
 I'm not advocating one testing framework over another.
-I've used Mocha JS quite a bit in the past and wrote a 
-[Learn Mocha tutorial](https://github.com/nelsonic/learn-mocha) 
-and I used [Jasmine](http://pivotal.github.io/jasmine) *extensively* 
+I've used Mocha JS quite a bit in the past and wrote a
+[Learn Mocha tutorial](https://github.com/nelsonic/learn-mocha)
+and I used [Jasmine](http://pivotal.github.io/jasmine) *extensively*
 [@MakePositive](https://twitter.com/nelsonic/status/321304049263722496/photo/1)
-... I actually *suggest* you ***make time*** to learn a *few* 
+... I actually *suggest* you ***make time*** to learn a *few*
 JS testing frameworks and then *pick* the one you like best!
 
-## Start Here!
 
 ```sh
 git clone https://github.com/nelsonic/learn-qunit.git
@@ -70,17 +144,23 @@ The main file you need to inspect is ./test/**index.html**:
 </html>
 ```
 
-(it references two JavaScript files **qunit.js** which is in the ./**resources** directory and **test.js** 
+(it references two JavaScript files **qunit.js** which is in the ./**resources** directory and **test.js**
 which is in the ./**test** directory)
 
-In the *body* of the **index.html** file there are two div elements 
+In the *body* of the **index.html** file there are two div elements
 with ids of **qunit** and **qunit-fixture** these are where QUnit will
+
+(it references two JavaScript files **qunit.js** and **test.js**
+both these files are in the ./**resources** directory)
+
+In the *body* of the **index.html** file there are two div elements
+with ids of **quint** and **qunit-fixture** these are where QUnit will
 display the results of our unit tests.
 
 ## Example Project: Stopwatch
 
 In a previous tutorial I built a simple stopwatch:
-https://github.com/nelsonic/stopwatch but its *deliberately* "minimalist" 
+https://github.com/nelsonic/stopwatch but its *deliberately* "minimalist"
 (did *not* have tests and all code was contained in a single html file)
 *This* time we are going to do it the "*right*" way, then you can compare.
 
@@ -94,12 +174,12 @@ https://github.com/nelsonic/stopwatch but its *deliberately* "minimalist"
 
 #### Folder/File Structure
 
-- ./**lib** contains the **stopwatch.js** module file
-- ./**test** contains the **tests.js** file with all our tests and 
+- /**lib** contains the **stopwatch.js** module file
+- /**test** contains the **tests.js** file with all our tests and
 **index.html** which is our QUnit "test runner" html file.
 
-**Note**: To facilitate *offline* learning I've included **qunit.js** 
-and **qunit.css** in the **/resources** directory, 
+**Note**: To facilitate *offline* learning I've included **qunit.js**
+and **qunit.css** in the **/resources** directory,
 but on a "real" project you should use the **CDN** versions
 (see http://qunitjs.com/ *bottom* of the *homepage* for latest links.)
 
@@ -108,7 +188,9 @@ but on a "real" project you should use the **CDN** versions
 Unit tests in QUnit are insanely simple as you are about to see!
 
 We expect a Timer/Stopwatch to be Zero before we start it.
-![A stopwatch before start](https://raw.github.com/nelsonic/stopwatch/master/screenshots/Stopwatch-go.png "Stopwatch Zero")
+
+![A stopwatch before start](https://raw.githubusercontent.com/nelsonic/nelsonic.github.io/master/img/Stopwatch-go.png "Stopwatch Zero")
+
 (that's a lot of zeros! one would be enough.)
 
 Lets write a test for that:
@@ -123,7 +205,7 @@ This test assumes we have a **T** (Timer) Module.
 The T module should have a variable called **timerStarted**
 which should be 0 (zero) before we start the timer.
 
-For more tests see: ./test/**tests.js** 
+For more tests see: ./test/**tests.js**
 
 ### Watch Unit Tests FAIL
 
@@ -134,7 +216,7 @@ Our first fail is because we do not have a variable called "T":
 
 ### Write Code to PASS the Unit Test
 
-First we create the T (Timer) Module and our two main variables 
+First we create the T (Timer) Module and our two main variables
 **timeElapsed** and **timeStarted
 
 ```javascript
@@ -151,7 +233,7 @@ var T = (function () { // create a basic module ("IIFE") for our Timer
     };
 }());
 ```
-If this "*wrapped*" JavaScript function looks strange to you, 
+If this "*wrapped*" JavaScript function looks strange to you,
 read this: <br />
 http://en.wikipedia.org/wiki/Immediately-invoked_function_expression
 
@@ -193,7 +275,7 @@ That does *just* enough to pass the test.
 Once you have your process nailed:
 
 - Write a test and watch it fail
-- Write *just* enough code to pass the test 
+- Write *just* enough code to pass the test
 (without breaking any other test that was already passing!)
 
 You can go through all the requirements for the stopwatch and *grow* your
@@ -206,7 +288,7 @@ Once you have a full batch of passing tests you can relase the app!
 
 ## Bonus Level: Blanket.js (Test Coverage)
 
-Following the Blanket.js 
+Following the Blanket.js
 [Getting Started Guide](https://github.com/alex-seville/blanket/blob/master/docs/getting_started_browser.md)
 
 1. (Download and) Add **blanket.js** file to ./resources
@@ -220,7 +302,7 @@ You should now see the test coverage for the project!
 ![Blanket Test Coverage 100%](http://i.imgur.com/c2ZsOi4.png "100% Test Coverage")
 
 **Note**: for some reason this was giving an **error** in **Google Chrome**...
-This appears to be a *known issue*: 
+This appears to be a *known issue*:
 http://stackoverflow.com/questions/14481029/how-to-stop-global-failures-in-qunit  
 I tried adding JQuery to index.html but still get the same error in Chrome.
 Further investigation in the Chrome Developer Console reveals the following error detail:
@@ -229,12 +311,11 @@ Further investigation in the Chrome Developer Console reveals the following erro
 - Uncaught NetworkError: A network error occurred.  [**blanket.js:5317**]
 
 This error is due to accessing index.html on *localhost*. When I put the files
-on **S3** it works flawlessly in all browsers. 
-http://nelsonic.s3.amazonaws.com/learn-qunit/index.html?coverage=true
+on **S3** it works flawlessly in all browsers.
+https://qunit.herokuapp.com/?coverage=true
 
 
 ## Useful Links
-
 
 - QUnit **intro tutorial**: http://qunitjs.com/intro/
 - QUnit on **GitHub**: https://github.com/jquery/qunit
@@ -246,4 +327,14 @@ http://nelsonic.s3.amazonaws.com/learn-qunit/index.html?coverage=true
 - QUnit "**Before Each**" (workaround): http://stackoverflow.com/questions/1683416/how-do-i-run-a-function-before-each-test-when-using-qunit
 - QUnit with Sinon (Backbone): http://addyosmani.com/blog/unit-testing-backbone-js-apps-with-qunit-and-sinonjs/
 
-> **PhantomJS** with QUnit: http://www.ianlewis.org/en/phantom-qunit-test-runner
+## Notes
+
+*Yes*, we know that most of the *reasons* (for learning QUnit) described above are also applicable to Mocha, Jasmine, etc.  
+We are not saying one test framework is "better" than the other.  
+In the past 5 years we have made a point of using ***all*** the JavaScript testing frameworks we wrote a popular
+[Mocha.js Tutorial](https://github.com/nelsonic/learn-mocha)
+... we actually *suggest* you ***make time*** to ***learn a few***
+JS testing frameworks and then *pick* the one that suits your needs!
+
+
+> Next: **PhantomJS** with QUnit: http://www.ianlewis.org/en/phantom-qunit-test-runner
