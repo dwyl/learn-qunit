@@ -109,16 +109,6 @@ Our **Top Five** reasons you should learn QUnit are:
 
 Try it: https://qunit.herokuapp.com/?coverage=true
 
-*Yes*, most of these *reasons* (for learning QUnit) are also applicable
-to Mocha and Jasmine. <br />
-I'm not advocating one testing framework over another.
-I've used Mocha JS quite a bit in the past and wrote a
-[Learn Mocha tutorial](https://github.com/nelsonic/learn-mocha)
-and I used [Jasmine](http://pivotal.github.io/jasmine) *extensively*
-[@MakePositive](https://twitter.com/nelsonic/status/321304049263722496/photo/1)
-... I actually *suggest* you ***make time*** to learn a *few*
-JS testing frameworks and then *pick* the one you like best!
-
 
 ```sh
 git clone https://github.com/nelsonic/learn-qunit.git
@@ -328,9 +318,10 @@ https://qunit.herokuapp.com/?coverage=true
 - QUnit with Sinon (Backbone): http://addyosmani.com/blog/unit-testing-backbone-js-apps-with-qunit-and-sinonjs/
 - QUnit ***Asynchronous*** tests: https://api.qunitjs.com/async/
 
-## Notes
+## FAQ
 
-*Yes*, we know that most of the *reasons* (for learning QUnit) described above are also applicable to Mocha, Jasmine, etc.  
+**Q**: Is QUnit *similar* to "*XYZ*" testing I heard was good...?  
+*Yes*, most javascript testing frameworks are pretty similar. Most of the *reasons* (for learning QUnit) we described above are also applicable to Mocha, Jasmine, etc.  
 We are not saying one test framework is "better" than the other.  
 In the past 5 years we have made a point of using ***all*** the JavaScript testing frameworks we wrote a popular
 [Mocha.js Tutorial](https://github.com/nelsonic/learn-mocha)
