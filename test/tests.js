@@ -56,7 +56,7 @@ test( "renderTimer() displays a string digits separated by colons", function() {
     //                      hours   minutes   seconds   miliseconds
     var dayInMilliseconds =  24   *   60    *   60    *   1000;
     // start the timer yesterday! :-o
-    var startTime = new Date().getTime() - dayInMilliseconds + 1000 ;
+    var startTime = new Date().getTime() - (dayInMilliseconds - 1000) ;
     // equal( T.startTimer(startTime), startTime);\
     T.resetTimer(); // reset before restart
     console.log('>>>>>>>' + startTime + ' | dayInMilliseconds: '+ dayInMilliseconds)
