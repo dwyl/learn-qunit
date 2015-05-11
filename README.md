@@ -105,9 +105,36 @@ Our **Top Five** reasons you should learn QUnit are:
 4. ***Well established*** and used extensively by JQuery developers (*so you know it* ***works everywhere***!)
 5. Great ***Ecosystem***! (QMock, TestSwarm & Blanket.js -> *client-side code coverage*)
 
-## How?
+## How? ... Example Project: Stopwatch
 
-Try it: https://qunit.herokuapp.com/?coverage=true
+In a previous tutorial we built a simple stopwatch:
+https://github.com/nelsonic/stopwatch its *deliberately* "minimalist"
+(did *not* have tests and all code was contained in a single html file)
+*This* time we are going to do it the "*right*" way (*Test Driven Development*!)
+
+#### What Functionality Does Our Stopwatch Need?
+
+- Counter should be at Zero when we start
+- Start Counting time from a specific point
+- Stop Counting
+- Continue Counting (without resetting) pick up where we left off.
+- Re-set the counter to Zero.
+
+#### Folder/File Structure
+
+- /**lib** contains the **stopwatch.js** module file
+- /**test** contains the **tests.js** file with all our tests and
+**index.html** which is our QUnit "test runner" html file.
+
+**Note**: To facilitate *offline* learning I've included **qunit.js**
+and **qunit.css** in the **/resources** directory,
+but on a "real" project you should use the **CDN** versions
+(see http://qunitjs.com/ *bottom* of the *homepage* for latest links.)
+
+
+We are going to build a **StopWatch** mini web application.
+This is what the end result looks like: (Try it!) https://qunit.herokuapp.com/?coverage=true
+
 
 
 ```sh
@@ -146,32 +173,6 @@ both these files are in the ./**resources** directory)
 In the *body* of the **index.html** file there are two div elements
 with ids of **quint** and **qunit-fixture** these are where QUnit will
 display the results of our unit tests.
-
-## Example Project: Stopwatch
-
-In a previous tutorial I built a simple stopwatch:
-https://github.com/nelsonic/stopwatch but its *deliberately* "minimalist"
-(did *not* have tests and all code was contained in a single html file)
-*This* time we are going to do it the "*right*" way, then you can compare.
-
-#### What Functionality Does Our Stopwatch Need?
-
-- Counter should be at Zero when we start
-- Start Counting time from a specific point
-- Stop Counting
-- Continue Counting (without resetting) pick up where we left off.
-- Re-set the counter to Zero.
-
-#### Folder/File Structure
-
-- /**lib** contains the **stopwatch.js** module file
-- /**test** contains the **tests.js** file with all our tests and
-**index.html** which is our QUnit "test runner" html file.
-
-**Note**: To facilitate *offline* learning I've included **qunit.js**
-and **qunit.css** in the **/resources** directory,
-but on a "real" project you should use the **CDN** versions
-(see http://qunitjs.com/ *bottom* of the *homepage* for latest links.)
 
 ### Write A Unit Test
 
