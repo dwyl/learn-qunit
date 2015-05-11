@@ -26,6 +26,6 @@ QUnit.testStart(function(testDetails){
   }
 });
 
-test( "hello test", function() {
+test( "saucelabs test", function() {
   ok( 1 == "1", "Passed!" );
 });
