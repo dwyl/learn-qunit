@@ -28,7 +28,7 @@ test( "startTimer() should continue counting after stopTimer()", function() {
     endTime = startTime + 5000; // manually add 5 seconds
     // timeElapsed = endTime - startTime;
     equal( T.stopTimer(endTime), 5000);
-    console.log("Pause timer ...")
+    console.log("Pause timer ...");
 
     // part 2 - start the timer again
     startTime = new Date().getTime();
@@ -77,5 +77,5 @@ test( "renderTimer() display leading zeros", function() {
     var startTime = new Date().getTime() - leadingZeroStartTime;
     T.startTimer(startTime);
     // equal( T.startTimer(startTime), startTime);
-    equal( T.renderTimer(startTime), '09:08:07:00')
+    equal( T.renderTimer(startTime), '09:08:07:00');
 });
