@@ -7,14 +7,14 @@ A ***quick introduction*** to JavaScript unit ***testing with  QUnit.js*** for *
 ## *Just Started* Developing Web/Mobile Apps?
 
 If you are *new* to Web/Mobile Application development,
-you might *overlook* the (*many*) *benefits* of (*automated*) *testing* (*please* ***star***/*bookmark this page so you can come back to it later*) ... we still ***encourage everyone*** to ***learn about testing***
+its *easy* to *overlook* the (*many*) *benefits* of (*automated*) *testing* (*please* ***star***/*bookmark this page so you can come back to it later*) ... we still ***encourage everyone*** to ***learn about testing***
 and have made every effort to keep this tutorial *accessible* to beginners (*simple code/examples*), but *acknowledge* this is ***a bit "theoretical"*** until
 you have felt the ***pain*** of having an app "***breaking***" due to
 ***insufficient testing*** ...
 
 ## (*Chose Your Favourite*) Analogy
 
-### Musicians Learn *Fundamental Skills* on their Instrument *Before* Playing a Concert
+### Musicians Learn *Fundamental Skills* on their Instrument
 
 Most of us have at least *attempted* to learn a musical instrument.
 Learning Test Driven Development (TDD) is like learning/practicing "*scales*"
@@ -49,7 +49,7 @@ a foundation, as software engineers we should have the same approach.
 
 The ***confidence*** that comes when building upon a solid foundation only arises if we ***put in the time*** to *first* ***dig a foundation***.
 
-### Car Designer Have a *Testing Mindset*
+### Car Designers Have a *Testing Mindset*
 
 *Thinking about* ***how*** you will ***test your solution*** to a problem, changes the way you *perceive* the problem. It might seem initially counter-intuitive to
 think about the test *before* you have solved the problem, but we *urge* you to consider the perspective of a car designer:
@@ -62,7 +62,7 @@ for their vehicle and *design* with that eventuality in mind.
 
 [![Lambo Crash and Burn](http://i.imgur.com/XcWqHxz.jpgg)](https://youtu.be/erxJcpTkhek?t=50s "Lambo Crash and Burn - Click to Watch!")
 
-Sure, the fast convertible is nice to *look at*, but if you had to pick a car for your loved ones, would it be sports car
+Sure, the fast convertible *looks nice*, but if you had to ***pick a car for your loved ones***, would it be sports car
 or the [*Volvo*](https://www.youtube.com/watch?v=46Zdvwacxik)
 with the dedicated team of life-saving expert engineers.
 
@@ -105,19 +105,30 @@ Our **Top Five** reasons you should learn QUnit are:
 4. ***Well established*** and used extensively by JQuery developers (*so you know it* ***works everywhere***!)
 5. Great ***Ecosystem***! (QMock, TestSwarm & Blanket.js -> *client-side code coverage*)
 
-## How?
+## How? ... Example Project: Stopwatch
 
-Try it: https://qunit.herokuapp.com/?coverage=true
+We are going to build a **StopWatch** mini web application.  
+This is what the end result looks like: (Try it!) https://qunit.herokuapp.com/?coverage=true
 
-*Yes*, most of these *reasons* (for learning QUnit) are also applicable
-to Mocha and Jasmine. <br />
-I'm not advocating one testing framework over another.
-I've used Mocha JS quite a bit in the past and wrote a
-[Learn Mocha tutorial](https://github.com/nelsonic/learn-mocha)
-and I used [Jasmine](http://pivotal.github.io/jasmine) *extensively*
-[@MakePositive](https://twitter.com/nelsonic/status/321304049263722496/photo/1)
-... I actually *suggest* you ***make time*** to learn a *few*
-JS testing frameworks and then *pick* the one you like best!
+#### What Functionality Does Our Stopwatch Need?
+
+- Counter should be at Zero when we start
+- Start Counting time from a specific point
+- Stop Counting
+- Continue Counting (without resetting) pick up where we left off.
+- Re-set the counter to Zero.
+
+#### Folder/File Structure
+
+- /**lib** contains the **stopwatch.js** module file
+- /**test** contains the **tests.js** file with all our tests and
+**index.html** which is our QUnit "test runner" html file.
+
+**Note**: To facilitate *offline* learning I've included **qunit.js**
+and **qunit.css** in the **/resources** directory,
+but on a "real" project you should use the **CDN** versions
+(see http://qunitjs.com/ *bottom* of the *homepage* for latest links.)
+
 
 
 ```sh
@@ -157,32 +168,6 @@ In the *body* of the **index.html** file there are two div elements
 with ids of **quint** and **qunit-fixture** these are where QUnit will
 display the results of our unit tests.
 
-## Example Project: Stopwatch
-
-In a previous tutorial I built a simple stopwatch:
-https://github.com/nelsonic/stopwatch but its *deliberately* "minimalist"
-(did *not* have tests and all code was contained in a single html file)
-*This* time we are going to do it the "*right*" way, then you can compare.
-
-#### What Functionality Does Our Stopwatch Need?
-
-- Counter should be at Zero when we start
-- Start Counting time from a specific point
-- Stop Counting
-- Continue Counting (without resetting) pick up where we left off.
-- Re-set the counter to Zero.
-
-#### Folder/File Structure
-
-- /**lib** contains the **stopwatch.js** module file
-- /**test** contains the **tests.js** file with all our tests and
-**index.html** which is our QUnit "test runner" html file.
-
-**Note**: To facilitate *offline* learning I've included **qunit.js**
-and **qunit.css** in the **/resources** directory,
-but on a "real" project you should use the **CDN** versions
-(see http://qunitjs.com/ *bottom* of the *homepage* for latest links.)
-
 ### Write A Unit Test
 
 Unit tests in QUnit are insanely simple as you are about to see!
@@ -196,7 +181,7 @@ We expect a Timer/Stopwatch to be Zero before we start it.
 Lets write a test for that:
 ```javascript
 test( "timeElapsed should be Zero before we start the Timer", function() {
-  equal( T.timeElapsed, 0, true );
+  equal( T.timeElapsed, 0, 'Message: timer is zero at start' );
 });
 ```
 
@@ -326,15 +311,19 @@ https://qunit.herokuapp.com/?coverage=true
 - JQuery's TestSwarm: http://swarm.jquery.org/
 - QUnit "**Before Each**" (workaround): http://stackoverflow.com/questions/1683416/how-do-i-run-a-function-before-each-test-when-using-qunit
 - QUnit with Sinon (Backbone): http://addyosmani.com/blog/unit-testing-backbone-js-apps-with-qunit-and-sinonjs/
+- QUnit ***Asynchronous*** tests: https://api.qunitjs.com/async/
 
-## Notes
+## FAQ
 
-*Yes*, we know that most of the *reasons* (for learning QUnit) described above are also applicable to Mocha, Jasmine, etc.  
+**Q**: Is QUnit *similar* to "*XYZ*" testing I heard was good...?  
+*Yes*, most javascript testing frameworks are pretty similar. Most of the *reasons* (for learning QUnit) we described above are also applicable to Mocha, Jasmine, etc.  
 We are not saying one test framework is "better" than the other.  
 In the past 5 years we have made a point of using ***all*** the JavaScript testing frameworks we wrote a popular
 [Mocha.js Tutorial](https://github.com/nelsonic/learn-mocha)
 ... we actually *suggest* you ***make time*** to ***learn a few***
 JS testing frameworks and then *pick* the one that suits your needs!
 
+## What's Next?
 
-> Next: **PhantomJS** with QUnit: http://www.ianlewis.org/en/phantom-qunit-test-runner
++ **SauceLabs Cross-Browser Testing**: https://github.com/docdis/learn-saucelabs
++ **PhantomJS** with QUnit: http://www.ianlewis.org/en/phantom-qunit-test-runner

@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <title>Simple Stopwatch</title>
   <link href="/style.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="./lib/stopwatch.js"></script>
 </head>
 
 <body>
@@ -21,9 +23,6 @@
     <button onclick='T.stopTimer( new Date().getTime() )'  id='stop'>Stop</button>
     <button onclick='T.resetTimer()' id='clear'>Clear</button>
   </div>
-
-  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-  <script src="./lib/stopwatch.js"></script>
 
 
   <br /> <!-- display test results inline with stopwatch -->
