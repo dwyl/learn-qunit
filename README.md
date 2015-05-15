@@ -1,4 +1,4 @@
-![QUnit Logo](http://i.imgur.com/Y5YzoDu.png "QUnit Logo")
+![QUnit Logo](http://i.imgur.com/Y5YzoDu.png "QUnit Logo")  [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/docdis/learn-qunit/issues) [![Join the chat at https://gitter.im/docdis/javascript-best-practice](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/docdis/?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 Learn QUnit Test Driven Development (TDD)
 ===========
 
