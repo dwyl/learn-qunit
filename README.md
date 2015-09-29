@@ -159,12 +159,6 @@ The main file you need to inspect is ./test/**index.html**:
 which is in the ./**test** directory)
 
 In the *body* of the **index.html** file there are two div elements
-with ids of **qunit** and **qunit-fixture** these are where QUnit will
-
-(it references two JavaScript files **qunit.js** and **test.js**
-both these files are in the ./**resources** directory)
-
-In the *body* of the **index.html** file there are two div elements
 with ids of **quint** and **qunit-fixture** these are where QUnit will
 display the results of our unit tests.
 
